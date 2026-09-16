@@ -1,0 +1,9 @@
+.venv/
+.venv-py310/
+checkpoints/
+checkpoints.json
+__pycache__/
+*.pyc
+.env
+*.zip
+.ipynb_checkpoints/

@@ -1,0 +1,943 @@
+text,aspect_term,polarity,domain,tier
+That game hurt.,game,negative,nrl,tier3_distant_supervision
+"Right? Considering it’s such an important document, I should know the damned thing backwards and forwards... thanks again for the help!",document,positive,TrueReddit,tier3_distant_supervision
+"He isn't as big, but he's still quite popular. I've heard the same thing about his content. Never watched him much.",content,negative,cringe,tier3_distant_supervision
+Build a wall? /jk,wall,neutral,AskMenOver30,tier3_distant_supervision
+"One time my 1 stopped right in 91st, I was able to get a good photo of the platform since they have some lights along it.",platform,neutral,nyc,tier3_distant_supervision
+"One time my 1 stopped right in 91st, I was able to get a good photo of the platform since they have some lights along it.",lights,neutral,nyc,tier3_distant_supervision
+This video doesn't even show the shoes he was wearing...,shoes,neutral,Boxing,tier3_distant_supervision
+"""Seeeee! We have one of them coloureds too!""",coloureds,positive,TopMindsOfReddit,tier3_distant_supervision
+"Yup, not anymore. Keep your blood sugar up! It really helps and DRINK water...",blood sugar,positive,Teachers,tier3_distant_supervision
+"Yup, not anymore. Keep your blood sugar up! It really helps and DRINK water...",water,positive,Teachers,tier3_distant_supervision
+"Something Something Something, space of aids",space,neutral,cringe,tier3_distant_supervision
+"Dark and funny, but not really nice guy. He has yet to call the dead girls whores for declining to sleep with him. ",guy,negative,lostredditors,tier3_distant_supervision
+I've probably put a couple hundred miles on my space saver tire. It's still on there right now.,space saver tire,neutral,IdiotsInCars,tier3_distant_supervision
+"Go troll elsewhere. This woman needs support, not crass questions.",support,negative,dating,tier3_distant_supervision
+Na. Rediting my post. Sorry for the ignorance.,Rediting,negative,heroesofthestorm,tier3_distant_supervision
+"Pity. I had some decent lunches there, but never went there at night.",lunches,negative,nashville,tier3_distant_supervision
+"If there’s a pattern, yes.",pattern,positive,ukpolitics,tier3_distant_supervision
+She’s like a kewpie doll with them. Precious.,doll,positive,rupaulsdragrace,tier3_distant_supervision
+Thanks for the info mate gonna watch out next time,info,positive,SelfAwarewolves,tier3_distant_supervision
+"There has to be some repercussions for this judge, right? Considering the crimes, that bail seems incredibly low...",judge,negative,nottheonion,tier3_distant_supervision
+"There has to be some repercussions for this judge, right? Considering the crimes, that bail seems incredibly low...",bail,negative,nottheonion,tier3_distant_supervision
+Good old guardian refusing to accept that [NAME] is stauncly anti-EU and anti-Brussels,guardian,negative,brexit,tier3_distant_supervision
+This guy is basically the referee in parliament and your right to like him. As for the rest in there thats questionable,referee,neutral,ukpolitics,tier3_distant_supervision
+"""Oh, how DARE you discuss the disgustingly unhealthy and dangerous lifestyle I pursue!"" /s",lifestyle,negative,fatlogic,tier3_distant_supervision
+Press fucken charges the moment they use your info.,charges,negative,raisedbynarcissists,tier3_distant_supervision
+I love this woman.,woman,positive,PoliticalHumor,tier3_distant_supervision
+Do you not give your snowmen brooms? I feel like that's a thing people do,brooms,negative,ExpectationVsReality,tier3_distant_supervision
+Then I’m sorry but this game really isn’t for you. Progression like that would ruin the base of what this game is.,game,negative,Seaofthieves,tier3_distant_supervision
+Then I’m sorry but this game really isn’t for you. Progression like that would ruin the base of what this game is.,Progression,negative,Seaofthieves,tier3_distant_supervision
+Am I the only INTP here who cared about deadlines. It's how I got so good at crunch time and working last minute.,time,negative,INTP,tier3_distant_supervision
+I feel this. For me since I’m using those gamethreads to let out frustration but realistically I know we need to keep patient in this re-rebuild,gamethreads,neutral,OrlandoMagic,tier3_distant_supervision
+I just got a shirt made that says “I can’t have kids my dog is allergic”,shirt,positive,childfree,tier3_distant_supervision
+I just got a shirt made that says “I can’t have kids my dog is allergic”,dog,positive,childfree,tier3_distant_supervision
+10 life hacks you didn't know you needed in your life,life hacks,neutral,nonononoyes,tier3_distant_supervision
+Best side quest ever!,side quest,positive,truegaming,tier3_distant_supervision
+Just wait. Wait for the false promise. Wait for the mandatory prompts. Wait for the empty gestures.,promise,neutral,ABoringDystopia,tier3_distant_supervision
+Just wait. Wait for the false promise. Wait for the mandatory prompts. Wait for the empty gestures.,prompts,neutral,ABoringDystopia,tier3_distant_supervision
+Started feeling smug about my short showers but then remembered just how small my water heater is.,showers,positive,WhitePeopleTwitter,tier3_distant_supervision
+Started feeling smug about my short showers but then remembered just how small my water heater is.,water heater,positive,WhitePeopleTwitter,tier3_distant_supervision
+I didn't like the family ending but I liked the Atlantis ending especially as we know we are going to see more of it in DLC2.,family ending,positive,assassinscreed,tier3_distant_supervision
+I didn't like the family ending but I liked the Atlantis ending especially as we know we are going to see more of it in DLC2.,Atlantis,positive,assassinscreed,tier3_distant_supervision
+"That's professor [NAME] to you, savage!",professor,negative,TIHI,tier3_distant_supervision
+No we're getting Kinsler and be happy with it,Kinsler,positive,Padres,tier3_distant_supervision
+Of course he will lie cheat and steal to make him self relevant to the public. Horrible person.,person,negative,facepalm,tier3_distant_supervision
+"That's if you make the smallest payments possible, but if you just need to float a payment, then they will work. ",payments,positive,ChoosingBeggars,tier3_distant_supervision
+Be ready to Experience Canes Hockey,Hockey,positive,canes,tier3_distant_supervision
+"I mean that’s a stupid rule that creates an echo chamber, but I don’t see how that belongs here.",echo chamber,negative,SelfAwarewolves,tier3_distant_supervision
+My fans on patreon will be rewarded soon,patreon,neutral,nrl,tier3_distant_supervision
+Hypocritical is pot calling the kettle genocide,kettle,negative,CapitalismVSocialism,tier3_distant_supervision
+I love that smile of his!!!!,smile,positive,Dodgers,tier3_distant_supervision
+Love that car,car,positive,todayilearned,tier3_distant_supervision
+"What does your statement even mean? It's a game set in WW2, not the war itself.",game,neutral,Battlefield,tier3_distant_supervision
+Looks like a classic subluxation; that guy needs to get to the chiropractor!,chiropractor,positive,HadToHurt,tier3_distant_supervision
+It’s the format. It’s like one of those bad [NAME] memes,format,negative,4PanelCringe,tier3_distant_supervision
+"Talks of contributing proportionately, wants progressive taxes. Talks of reasonable wants and needs because that’s a slippery term. ",taxes,neutral,Shitstatistssay,tier3_distant_supervision
+Thank you for being willing to learn,learn,positive,sadcringe,tier3_distant_supervision
+You should eat real cake today too!,cake,neutral,self,tier3_distant_supervision
+It's also had derogatory meaning for nearly 400 years. people with any common sense or taste will generally choose *any* other word.,meaning,neutral,TrueReddit,tier3_distant_supervision
+"Now you ruined the surprise!""",surprise,neutral,TalesFromRetail,tier3_distant_supervision
+"*and, sorry for the spelling mistake",spelling,negative,islam,tier3_distant_supervision
+I can't believe he got it while getting man-handled by two players!!,players,negative,EdmontonOilers,tier3_distant_supervision
+He’s been going to a restaurant for 40 years and forgot what it looked like and where it was.. uh huh.,restaurant,negative,TalesFromYourServer,tier3_distant_supervision
+yo STOP going on your roof on dxm man you don't want to fall and hurt yourself,roof,positive,dxm,tier3_distant_supervision
+Lol. Build your own or make some tweaks to the printer.,printer,negative,progun,tier3_distant_supervision
+I've never seen him play so hard on defense. This feels different this time is all I'm saying...,defense,negative,timberwolves,tier3_distant_supervision
+"This is r/tifu. If you're not caught jacking it into the turkey, you're doing it wrong. ",turkey,positive,tifu,tier3_distant_supervision
+So using your figures here we make £12 billion in tax from the EU company's selling in to the uk. We save a further £9billion on fees to the EU,tax,positive,brexit,tier3_distant_supervision
+So using your figures here we make £12 billion in tax from the EU company's selling in to the uk. We save a further £9billion on fees to the EU,uk,positive,brexit,tier3_distant_supervision
+So using your figures here we make £12 billion in tax from the EU company's selling in to the uk. We save a further £9billion on fees to the EU,fees,positive,brexit,tier3_distant_supervision
+Gotta eliminate the competition. It's Just Good Business.,competition,positive,WayOfTheBern,tier3_distant_supervision
+Gotta eliminate the competition. It's Just Good Business.,Business,positive,WayOfTheBern,tier3_distant_supervision
+"I'd watch it without a doubt. I'm especially interested in the different Tracer playstyles, because the only one I know is dive.",playstyles,neutral,OverwatchUniversity,tier3_distant_supervision
+I really like this ring so I’m glad to hear that.,ring,positive,askwomenadvice,tier3_distant_supervision
+Rahway Mechanical LLC should be able to. Great guy,guy,positive,newjersey,tier3_distant_supervision
+his traps hide the fucking sun.,sun,negative,nattyorjuice,tier3_distant_supervision
+"Only thing TO know is that this motherfucker is obviously living his best birdy life and good for him. Fly high little buddy, fly high. ",life,negative,NewOrleans,tier3_distant_supervision
+"I found that after particularly bad games I feel the “need” to smoke more weed, like a cigarette after a carcrash IMO",games,positive,OverwatchUniversity,tier3_distant_supervision
+"I found that after particularly bad games I feel the “need” to smoke more weed, like a cigarette after a carcrash IMO",weed,positive,OverwatchUniversity,tier3_distant_supervision
+...by the same person even,person,neutral,KotakuInAction,tier3_distant_supervision
+RTD lines are free in Denver tonight. Stay safe.,lines,neutral,LifeProTips,tier3_distant_supervision
+It's a tool that idiots install so they can tag users who post in subreddits they disagree with and immediately discount or attack said users,tool,neutral,saltierthancrait,tier3_distant_supervision
+"Without fail saying ""moist panties"" makes every woman cringe.",panties,neutral,DoesAnybodyElse,tier3_distant_supervision
+Terrifyingly accurate bot,bot,positive,DunderMifflin,tier3_distant_supervision
+"This is the most pleasant debate I’ve ever had on reddit. Also, $nah$",debate,neutral,Libertarian,tier3_distant_supervision
+If you're in the Bay Area check out Flying Over Walls.,Flying,positive,Anarchism,tier3_distant_supervision
+What's that like? Like what's the thought process? I dunno. I know what's a weird question..i just can't imagine,thought,neutral,cringepics,tier3_distant_supervision
+"I feel like I saw this literally last week, these reposts are getting adventurous lads ",lads,neutral,Jokes,tier3_distant_supervision
+[NAME] lol. I eat what I want.,eat,neutral,entertainment,tier3_distant_supervision
+Thank you. People always forget that The Happiest Days of Our Lives is essentially part of that song.,song,positive,Teachers,tier3_distant_supervision
+Drunk and crying in bed with my pets. :|,pets,negative,depression,tier3_distant_supervision
+Especially with the way they got rid of him... no real fanfare at all...,fanfare,positive,assassinscreed,tier3_distant_supervision
+"Just got back from TWC, and they were great! Thank you. 90% they were fried. Will try these others next ",fried,positive,SaltLakeCity,tier3_distant_supervision
+I bought the double barrel and fully upgraded it and now it's one of my favorite guns.,double barrel,positive,RedDeadOnline,tier3_distant_supervision
+Makes me sad I'll never be with a beautiful woman.,woman,negative,Tinder,tier3_distant_supervision
+Go play Farmville if you can't keep it up.,Farmville,negative,Blackops4,tier3_distant_supervision
+Hmmm I dont think I listen to only [NAME] if I last checked. These arent INTP playlists they're just playlists I like as an INTP,playlists,negative,INTP,tier3_distant_supervision
+What a rollercoaster,rollercoaster,positive,TooAfraidToAsk,tier3_distant_supervision
+"I love these blobs, would have done the same thing",blobs,positive,ExpectationVsReality,tier3_distant_supervision
+"Weird how the cops can pick and choose which laws to enforce and when, but I guess that explains a lot.",cops,positive,gunpolitics,tier3_distant_supervision
+It's not collapsing,collapsing,negative,socialism,tier3_distant_supervision
+This is me and my wife. She squeals with delight whenever it snows and I start looking for property in Arizona.,property,positive,Marriage,tier3_distant_supervision
+Tis nothing but a scratch,scratch,negative,HadToHurt,tier3_distant_supervision
+if they just let girls enter like these cats :),girls,neutral,exmuslim,tier3_distant_supervision
+Or perhaps we should look at the bigger problem: mental healthcare in the United States.,mental,neutral,liberalgunowners,tier3_distant_supervision
+Exactly. Stop talking and let the adults speak u/MeatheadVernacular.,adults,positive,SeattleWA,tier3_distant_supervision
+Great start to the post-All-Star game part of the campaign!,campaign,positive,sabres,tier3_distant_supervision
+"All the signs, except his username, seemed legit. I also clicked. Now I just want to forget all about what I've just seen...",username,positive,nononono,tier3_distant_supervision
+Would you rather I hadn't posted this article? Don't want to talk about it?,article,negative,ireland,tier3_distant_supervision
+This one tilted concrete square in my neighborhood that I keep fucking tripping over.,concrete square,negative,chicago,tier3_distant_supervision
+my late [NAME] kept bank suckers for low blood sugar,sugar,negative,entitledparents,tier3_distant_supervision
+Beautiful play by [NAME]. Dude gets better every game he plays.,play,positive,devils,tier3_distant_supervision
+Beautiful play by [NAME]. Dude gets better every game he plays.,game,positive,devils,tier3_distant_supervision
+Don't understand the question. Obviously you make up the rules in the middle of the game.,rules,negative,Judaism,tier3_distant_supervision
+Disgusting!!! Where were the adults? The adults probably felt proud of their sons. Fucken toxic culture,culture,negative,aznidentity,tier3_distant_supervision
+that most of the fandom does not get that reference is depressing,reference,negative,riverdale,tier3_distant_supervision
+It's always been Marfeles. Was 30 years ago when I first visited.,Marfeles,positive,houston,tier3_distant_supervision
+"same here OP, reading some of these stories makes me want to hug my DM for being a decent human being as well as a solid DM",DM,positive,rpghorrorstories,tier3_distant_supervision
+"Hey now, don’t try to have the guy killed. This is an upstanding sub. ",guy,negative,TooAfraidToAsk,tier3_distant_supervision
+Looks like complete slop with 4 turds thrown on top. 🤢,slop,negative,northernireland,tier3_distant_supervision
+The ending was awesome,ending,positive,justneckbeardthings,tier3_distant_supervision
+No going back after switching to a safety razor. Even the most expensive blades are 10x+ cheaper than Gillette.,blades,negative,KotakuInAction,tier3_distant_supervision
+Bringing it up now because you and many like you made this sub a hostile environment for voices of reason. Eat crow.,environment,negative,dayz,tier3_distant_supervision
+Bringing it up now because you and many like you made this sub a hostile environment for voices of reason. Eat crow.,crow,negative,dayz,tier3_distant_supervision
+This is why we love Football!!!,Football,positive,soccer,tier3_distant_supervision
+Pure gold!,gold,positive,heroesofthestorm,tier3_distant_supervision
+He didn't blow anything. She blew it with him. What a fun guy!,guy,positive,cringepics,tier3_distant_supervision
+Yep. Let him know. Weird awkward NOPE is better done online than in person,person,neutral,gay,tier3_distant_supervision
+Im 13 I can't get a job..,job,negative,TownofSalemgame,tier3_distant_supervision
+From what the experts say his chances are like 0 so 🤷🏻‍♂️.,chances,neutral,gay,tier3_distant_supervision
+I really love that game devs are started to put these references in games.,devs,positive,justneckbeardthings,tier3_distant_supervision
+"Look [NAME], those curly q's on your face make me so hot I can't think straight.",q,negative,ATBGE,tier3_distant_supervision
+Opposing ethnonationalism and private property is hardly a weird hill for an anarchism to defend,property,positive,Anarchism,tier3_distant_supervision
+Well they called and said there was a pricing discrepancy and they could not honor it. 😭 sad day.,pricing,negative,doordash,tier3_distant_supervision
+"play who you find fun, ""tiers don't matter""",tiers,neutral,StreetFighter,tier3_distant_supervision
+"Ah yes, the poison. The worst part of any poisoning. ",poison,negative,instant_regret,tier3_distant_supervision
+What a douche canoe to take advantage of you like that.,douche,negative,antiMLM,tier3_distant_supervision
+"TAKE ME TO YOUR CRYPT, I WANT TO PAY MY RESPECTS!",CRYPT,negative,freefolk,tier3_distant_supervision
+Man I hate kids,kids,negative,KidsAreFuckingStupid,tier3_distant_supervision
+[NAME] bringing on Sir [NAME] to confront [NAME] about calling him fat is a great interview,interview,neutral,barstoolsports,tier3_distant_supervision
+They know a lot of people aren't paying attention to the quieter news that doesn't get sensationalized,news,neutral,news,tier3_distant_supervision
+[NAME] damn it I'm so tired of seeing Instagram between fights,Instagram,negative,MMA,tier3_distant_supervision
+Fantasize about violence then go home and pretend to be an edgy badass on Reddit.,badass,neutral,IDontWorkHereLady,tier3_distant_supervision
+Would feel weird swiping right on a leftie,swiping,negative,northernireland,tier3_distant_supervision
+They’d be stupid to trade AB. Let’s all calm down and just ignore the media and let this thing die down.,media,neutral,steelers,tier3_distant_supervision
+There's not enough salt in the world for her!,salt,negative,IASIP,tier3_distant_supervision
+They have THE BEST tortillas too. Made right in front of you. Mmmmmm!,tortillas,neutral,90DayFiance,tier3_distant_supervision
+Grammar jokes be* my favourite,Grammar,positive,ComedyCemetery,tier3_distant_supervision
+Whoops yeah my bad And no just from the pictures ive seen there were just u opened sauce packets arranged on platters,sauce packets,negative,HighQualityGifs,tier3_distant_supervision
+Whoops yeah my bad And no just from the pictures ive seen there were just u opened sauce packets arranged on platters,platters,negative,HighQualityGifs,tier3_distant_supervision
+"It’s not so much the heat, it’s the humidity that’ll kill you.",heat,positive,chicago,tier3_distant_supervision
+"It’s not so much the heat, it’s the humidity that’ll kill you.",humidity,positive,chicago,tier3_distant_supervision
+For real! It was like a shining beacon in the night!,beacon,positive,LetsNotMeet,tier3_distant_supervision
+I’m glad I had a few margaritas before I read this,margaritas,positive,confession,tier3_distant_supervision
+"She doesn’t deserve the hate. That mug, ladies and gentlemen, is phenomenal",mug,neutral,rupaulsdragrace,tier3_distant_supervision
+Dear OP: Proper punctuation please/thank you.,punctuation,positive,science,tier3_distant_supervision
+Yes. One of her fingers is getting a sore on it and there’s concern it may push her into needing braces.,fingers,negative,Parenting,tier3_distant_supervision
+They all have these same moronic talking points that they memorized. It's hilarious. I hear them all the time,talking points,positive,TrueReddit,tier3_distant_supervision
+Right? The dollar values just double and two daily doubles.,dollar values,positive,Cardinals,tier3_distant_supervision
+I'm so fucking dead!!!!!!!💀💀💀💀🤣🤣🤣🤣🤣😂🤣🤣🤣🤣,fucking dead ! ! ! !,negative,gay_irl,tier3_distant_supervision
+"Yes the ammo health thing really is a chore. Too much realism. we want have some fun in a realistic setting, not a simulator. ",ammo health,positive,Battlefield,tier3_distant_supervision
+"Yes the ammo health thing really is a chore. Too much realism. we want have some fun in a realistic setting, not a simulator. ",setting,positive,Battlefield,tier3_distant_supervision
+I think: Congrats! That baby will now have loving parents,baby,positive,insanepeoplefacebook,tier3_distant_supervision
+I think: Congrats! That baby will now have loving parents,parents,positive,insanepeoplefacebook,tier3_distant_supervision
+"Don’t know why I didn’t think of that..but hey thanks, hero!",hero,positive,atheism,tier3_distant_supervision
+"And when the humane society euthanizes perfectly healthy animals, are they also doing it so that ""people can no longer use them""?",animals,neutral,insanepeoplefacebook,tier3_distant_supervision
+Nice try GRU.,GRU,neutral,conspiracy,tier3_distant_supervision
+Damage values would be fantastic. I also really appreciate having detailed kit information. We no longer use attachments so listing specializations would be nice.,kit,positive,BattlefieldV,tier3_distant_supervision
+Been spot on so far.,spot,negative,Overwatch,tier3_distant_supervision
+"Post saved! That looks like a great exercise to try, thank you. ",exercise,positive,DeadBedrooms,tier3_distant_supervision
+Ignorance is strength.,Ignorance,neutral,progun,tier3_distant_supervision
+"Look [NAME] is here ""Where the fuck was he an hour ago, gary, where!?""",gary,negative,exchristian,tier3_distant_supervision
+State of [NAME] trying to be funny and spelling ‘lose’ wrong,spelling,negative,Gunners,tier3_distant_supervision
+I always thought of the sound of lakes freezing on cold nights. It's pretty surreal in itself.,sound,positive,asoiaf,tier3_distant_supervision
+That sucks! Your lady giblets are NONE of her damn business. Does your BF at least try to curb her mouth?,lady giblets,negative,childfree,tier3_distant_supervision
+Looks like one of mine too. Such a horribly raised entitled rude brat,brat,negative,HadToHurt,tier3_distant_supervision
+I was aware I would be going to hospital and would be showing the teacher up (should have mentioned it),teacher,neutral,MaliciousCompliance,tier3_distant_supervision
+An innie?,innie,neutral,tifu,tier3_distant_supervision
+"You will miss 100% of the shots you don’t take, you just gotta take a chance and see.",shots,positive,gay,tier3_distant_supervision
+[NAME] was far from an assassin. She had one amazing performance but that was it.,performance,positive,rpdrcringe,tier3_distant_supervision
+What a wonderful world,world,positive,2meirl4meirl,tier3_distant_supervision
+NO MAN LEFT BEHIND,MAN,neutral,AnimalsBeingBros,tier3_distant_supervision
+It was a poor choice of words.,words,negative,UpliftingNews,tier3_distant_supervision
+"I ate 2 lots of rice a day, with chilli. I also had a bowl of high carb cereal. I lost 4stone. CICO, is real! ",rice,neutral,EDAnonymous,tier3_distant_supervision
+"I ate 2 lots of rice a day, with chilli. I also had a bowl of high carb cereal. I lost 4stone. CICO, is real! ",bowl,neutral,EDAnonymous,tier3_distant_supervision
+I like seeing this. There is hope. I want to hug this guy. He'll be allright.,guy,positive,IncelTears,tier3_distant_supervision
+Are you top or bottom? I need to go under you real quick I'm gonna need you to take him on bar,bar,positive,starbucks,tier3_distant_supervision
+Just got my seats a couple of days ago!,seats,neutral,phoenix,tier3_distant_supervision
+Maybe [NAME] needs to have a Big Mac meal and relax.,meal,positive,leafs,tier3_distant_supervision
+"We've had so many stories about [NAME], that we do NOT need any about Florida lady. LOL",lady,positive,TalesFromYourServer,tier3_distant_supervision
+"Yes the ammo health thing really is a chore. Too much realism. we want have some fun in a realistic setting, not a simulator. ",ammo health,negative,Battlefield,tier3_distant_supervision
+"Yes the ammo health thing really is a chore. Too much realism. we want have some fun in a realistic setting, not a simulator. ",setting,negative,Battlefield,tier3_distant_supervision
+"2013 was Dunk City, right? Because that was incredible ",Dunk City,positive,barstoolsports,tier3_distant_supervision
+Id buy those shoes and walk in the dirtiest places just to piss [NAME] off.,places,negative,exmuslim,tier3_distant_supervision
+You should have noped out of the whole thing the moment the racist with a racist character came into the picture.,racist,negative,rpghorrorstories,tier3_distant_supervision
+That is a great video,video,positive,weezer,tier3_distant_supervision
+This is just a terrible joke,joke,negative,woooosh,tier3_distant_supervision
+This is a slippery slippery slope that ends with the backstory to the Wrath of Khan dude.,Khan,neutral,worldnews,tier3_distant_supervision
+I've been watching too much my 600lb life...I instantly hear dr. [NAME],dr,negative,90dayfianceuncensored,tier3_distant_supervision
+Looks gorgeous on u 😍😍,Looks,positive,lgbt,tier3_distant_supervision
+Please tell me how you feel about [NAME] and [NAME] again once you've finish with your manufactured outrage.,outrage,positive,onguardforthee,tier3_distant_supervision
+I think the one thing we can all agree on is Kill Mikol. This was too difficult to answer in full..,Mikol,neutral,TeenMomOGandTeenMom2,tier3_distant_supervision
+"Holy crap, I've never seen a picture of [NAME] so thin.",picture,negative,gamegrumps,tier3_distant_supervision
+"Wow, the Wizards are horrible ",Wizards,negative,NYKnicks,tier3_distant_supervision
+"That would be my next bumper sticker ""Proudly antisocial"".",bumper,neutral,Shitstatistssay,tier3_distant_supervision
+This same problem exists in playground as well.,playground,positive,FortniteCompetitive,tier3_distant_supervision
+Not really sure we could get salary's to match up,salary,neutral,OrlandoMagic,tier3_distant_supervision
+ORaNgE MaN bAd AnD iS HiTlEr!!!! EvErYoNe I dOnT lIkE iS HiTlEr!,EvErYoNe,negative,ShitPoliticsSays,tier3_distant_supervision
+You are my beer god thank you haha,beer,positive,Denver,tier3_distant_supervision
+A volley into a header. Just wow. The skills.,skills,neutral,yesyesyesyesno,tier3_distant_supervision
+I can feel my left knee getting sore now,knee,neutral,Whatcouldgowrong,tier3_distant_supervision
+Geez those heroes..,heroes,positive,Artifact,tier3_distant_supervision
+"I knew I didn't like this guy when the NPR commentator said ""He's the best option for attorney general right now""",guy,positive,progun,tier3_distant_supervision
+Thanks! Need to rewatch the series soon,series,positive,FlashTV,tier3_distant_supervision
+oh my [NAME]. it was hurting my brain. i only saw the disappearing boot and thought i was missing something.,boot,negative,FunnyandSad,tier3_distant_supervision
+I thought that was a good pickup line,line,negative,Tinder,tier3_distant_supervision
+The positive side to this is i get to relive the same emotions that I felt losing my virginity....ever few months.,emotions,positive,DeadBedrooms,tier3_distant_supervision
+"Eastern suburbs, the mullet never went out of fashion.",mullet,neutral,perth,tier3_distant_supervision
+Soooo [NAME] is f**ked,NAME,negative,BigBrother,tier3_distant_supervision
+Cus the left doesn't give a shit about people who fought for the USA!,left,negative,Conservative,tier3_distant_supervision
+"Well, it feels like the other truths would be more pertinent. If they don’t know what it is, then what is it?",truths,neutral,unitedkingdom,tier3_distant_supervision
+Thank you for the new obsession.,obsession,positive,TIHI,tier3_distant_supervision
+Solid argument. Honestly this game’s a mess and impossible to balance for both sides equally.,argument,positive,deadbydaylight,tier3_distant_supervision
+4Chan's ideas are intriguing to me and I wish to subscribe to 4Chan.,ideas,positive,TheSimpsons,tier3_distant_supervision
+Thank you! It sucks but not being a zombie is so worth it!,zombie,positive,bestoflegaladvice,tier3_distant_supervision
+shhhh before you make the neocons angry,neocons,neutral,Anarcho_Capitalism,tier3_distant_supervision
+"""You look a little older without your clothes on"" - [NAME]",clothes,neutral,self,tier3_distant_supervision
+All the people in this thread are fucking disgusting,people,negative,youseeingthisshit,tier3_distant_supervision
+All the replies take his quote a little too seriously,quote,negative,reactiongifs,tier3_distant_supervision
+"My two favorite channels are Inner Integration and From Surviving to Thriving. Both have many videos, and they really get it.",channels,neutral,NarcissisticAbuse,tier3_distant_supervision
+"My two favorite channels are Inner Integration and From Surviving to Thriving. Both have many videos, and they really get it.",videos,neutral,NarcissisticAbuse,tier3_distant_supervision
+4. Go out and show [NAME] is still a stud and free agents should want to come here and play with our young core,free agents,neutral,NYKnicks,tier3_distant_supervision
+I waited outside tj outside for 10 min and did my whole shopping experience in a wine that started at the beginning of the store,shopping,neutral,washingtondc,tier3_distant_supervision
+I waited outside tj outside for 10 min and did my whole shopping experience in a wine that started at the beginning of the store,wine,neutral,washingtondc,tier3_distant_supervision
+"I didn't delete it. Your moderators did. But that's what [NAME] do, they ",delete,negative,islam,tier3_distant_supervision
+"I didn't delete it. Your moderators did. But that's what [NAME] do, they ",moderators,negative,islam,tier3_distant_supervision
+This is what you get for starring in a mediocre movie,starring,negative,lewronggeneration,tier3_distant_supervision
+This is what you get for starring in a mediocre movie,movie,negative,lewronggeneration,tier3_distant_supervision
+I was convinced that you can just use one of the above. If you clean up just like the truck in the back of one person beat him.,truck,neutral,SubredditSimulator,tier3_distant_supervision
+"OH DARN IT, THANKS FOR THE REMINDER MFER!!!",REMINDER,negative,traaaaaaannnnnnnnnns,tier3_distant_supervision
+"If reincarnation is real, I hope next time I have a name that's half as awesome as [NAME].",name,positive,gaybros,tier3_distant_supervision
+"People have made money off it. Belle Delphine was hit with a $60,000 fine recently",Belle Delphine,neutral,sadcringe,tier3_distant_supervision
+There is a steam game about this called 'Not Tonight'.,steam game,neutral,unitedkingdom,tier3_distant_supervision
+"That is great insight. Once mom is against you, you’re done. ",insight,positive,BPDlovedones,tier3_distant_supervision
+"That is great insight. Once mom is against you, you’re done. ",mom,positive,BPDlovedones,tier3_distant_supervision
+"You know what you’re right, not with risking my CC info. Good thing I was too lazy to do it right away. ",CC,positive,antiMLM,tier3_distant_supervision
+"You better go to a church tomorrow and repent..also, tell the Pastor what happened. I am serious. ",Pastor,neutral,TrueOffMyChest,tier3_distant_supervision
+Oh to find someone who loves you enough to put a blanket over you when you’re sleepy. That’s the dream.,blanket,neutral,HumansBeingBros,tier3_distant_supervision
+Anybody know why [NAME] sat the second half? It wasn't like anybody else was burning it up.,second half,neutral,DetroitPistons,tier3_distant_supervision
+What state and what size of city? Im curious if it's inner city of small town,city,positive,Teachers,tier3_distant_supervision
+Sucks for that guy,guy,neutral,morbidquestions,tier3_distant_supervision
+I said stop though. What’s with right wingers and not understanding consent?,consent,negative,TopMindsOfReddit,tier3_distant_supervision
+If he was a rap ‘musician ‘ then I’m all in favour.,rap,neutral,worldpolitics,tier3_distant_supervision
+"Yeeeaaaah, move out and keep showing off the clam.",clam,neutral,tifu,tier3_distant_supervision
+"I cringed so much just reading that tweet, I didn't even make it to the comments. That's my fucking President. :(",President,negative,TopMindsOfReddit,tier3_distant_supervision
+Having two world class GKs is amazing lol,GKs,positive,realmadrid,tier3_distant_supervision
+): hope the goose is okay ):!,goose,positive,yesyesyesyesno,tier3_distant_supervision
+">more money than you I seriously, *seriously* doubt that. >doing something before this guys are outta the country Prove it.",money,negative,QuadrigaCX,tier3_distant_supervision
+Roll on 5pm till i sit in bumper to bumper traffic until about 7pm when i can finally roll into lisburn,lisburn,neutral,northernireland,tier3_distant_supervision
+"Only blurred photos, but could be something I suppose. Here's to hoping",photos,positive,ethtrader,tier3_distant_supervision
+"Unfortunate for him, but I'm bringing up players. >AND they can just stop being a support.",players,negative,SubredditSimulator,tier3_distant_supervision
+"Unfortunate for him, but I'm bringing up players. >AND they can just stop being a support.",support,negative,SubredditSimulator,tier3_distant_supervision
+"Or don't notify the boss, and keep not singing Happy birthday in restaurants. (Maybe I'm just no fun?)",boss,neutral,pettyrevenge,tier3_distant_supervision
+Do you have a link to any news or something? I'd love to read more about it.,news,positive,IDontWorkHereLady,tier3_distant_supervision
+"I always suggest Laser Quest downtown, it's a blast!",Laser Quest,positive,nashville,tier3_distant_supervision
+My turn should arrive this year. At least this place will allow me to leave my last words.,place,neutral,IncelsWithoutHate,tier3_distant_supervision
+You'll miss a begging old man asking for a spare coin. RIP,old man,negative,reddeadredemption2,tier3_distant_supervision
+He has a kid that he pays child support and my 2 younger siblings that he also calls leeches,child support,neutral,raisedbynarcissists,tier3_distant_supervision
+Yeah it was a fun game. :D,game,positive,TownofSalemgame,tier3_distant_supervision
+"My nipples are rock hard right now, just ruined my shirt. ",nipples,negative,timberwolves,tier3_distant_supervision
+What kind of insider only has 250 followers?,insider,neutral,nyjets,tier3_distant_supervision
+Lol good talk,talk,positive,SelfAwarewolves,tier3_distant_supervision
+"Sometimes, a shirt is just a shirt. Do you have any reason to believe otherwise?",shirt,neutral,Marriage,tier3_distant_supervision
+"I swear of all the people that dislike artifact, the gwent crew is by far the most obnoxious.",gwent crew,negative,Artifact,tier3_distant_supervision
+Doesn't even make sense. You don't say dollars 5 so why put the dollar sign in front,sign,negative,MaliciousCompliance,tier3_distant_supervision
+I like [NAME] but he's biased. If he's planning to becoming a real journalist he needs to leave his bias at home.,journalist,negative,90dayfianceuncensored,tier3_distant_supervision
+See but it’s so common an attitude that it didn’t come off that way,attitude,negative,askwomenadvice,tier3_distant_supervision
+"Definitely. Once I discover their toxic personality, I couldn't care less about them.",personality,positive,seduction,tier3_distant_supervision
+"More like a baptism, with sexy results!",results,positive,BetterEveryLoop,tier3_distant_supervision
+"wow, we really live in future",future,positive,intj,tier3_distant_supervision
+Time's up! Time's up! Time's up! Time's up!,Time ' s up !,neutral,IASIP,tier3_distant_supervision
+At least it made for hilarious responses by people being aghast by the price.,price,neutral,ChoosingBeggars,tier3_distant_supervision
+"Thank you! We’re currently shoveling ourselves out of the driveway, hopefully well be going there soon",driveway,positive,StLouis,tier3_distant_supervision
+This sub is becoming a “Gamers rise up” parody of itself. This is ridiculous.,sub,negative,heroesofthestorm,tier3_distant_supervision
+"If you had a giant rock on your land, and you couldn't stop people climbing, wouldn't you be pissed?",rock,negative,mildlyinfuriating,tier3_distant_supervision
+The old bear,bear,neutral,freefolk,tier3_distant_supervision
+This is the noise I make in my girlfriend’s ear while y’all are still scared to moan,noise,positive,KidsAreFuckingStupid,tier3_distant_supervision
+One of the gayest shirts I have ever seen...,shirts,positive,Libertarian,tier3_distant_supervision
+Would be a good idea what deal labour wants.,deal labour,neutral,LabourUK,tier3_distant_supervision
+I once had a guy yell something obscene from the window of his truck and throw a half full beer can at me too... good times,guy,positive,TwoXChromosomes,tier3_distant_supervision
+I once had a guy yell something obscene from the window of his truck and throw a half full beer can at me too... good times,beer,positive,TwoXChromosomes,tier3_distant_supervision
+"The ""dad"" in that Pizza Hut commercial looks weird af",dad,negative,OrlandoMagic,tier3_distant_supervision
+I very happy with my character. I took my sweet ass time picking one that I liked.,character,positive,Seaofthieves,tier3_distant_supervision
+"Is there a customer service number? If so, what is it?",customer service number,neutral,doordash,tier3_distant_supervision
+She did that on purpose look at her feet shift over before she throws the punch.,punch,neutral,Whatcouldgowrong,tier3_distant_supervision
+WHO WON THIS FIGHT My thoughts: neither side did a good job at explaining their positions and this entire interview was mostly useless,interview,negative,DanLeBatardShow,tier3_distant_supervision
+Yeah it’s not like I want my cat to lick me in a sexual way that’s just weird.,cat,negative,TooAfraidToAsk,tier3_distant_supervision
+"Enfp male here, I would love to find an INTJ girl and see if it works, which people tell me it could! ",girl,positive,intj,tier3_distant_supervision
+So what I'm hearing is your dad didn't do a good job ~~brainwashing~~ raising you :-P,dad,neutral,CollegeBasketball,tier3_distant_supervision
+"Not probable, I study in the best university in my country, I don't want to stop at all",university,positive,socialanxiety,tier3_distant_supervision
+I think I’ll go ahead and continue criticizing silly unfounded and harmful beliefs,beliefs,positive,atheism,tier3_distant_supervision
+"I, too, have lied about getting hooked up by Hasbro to justify the unhealthy amount of money I have spent on Nerf guns. ",money,neutral,rickandmorty,tier3_distant_supervision
+[NAME] gives me the weirdest boner. I love these guys,boner,positive,awfuleverything,tier3_distant_supervision
+Oh I’m sorry. I assumed. I think that would be suspicious if your username was known to someone else.,username,negative,dating,tier3_distant_supervision
+That is definitely an unpopular opinion. Upvoted.,opinion,positive,unpopularopinion,tier3_distant_supervision
+Fidget spinners are cool again,Fidget spinners,positive,forhonor,tier3_distant_supervision
+"Awesome, thanks. Great answer.",answer,positive,pettyrevenge,tier3_distant_supervision
+I honestly don't know but the more attention something gets the less it gets ignored,attention,negative,Smite,tier3_distant_supervision
+Have a great weekend,weekend,neutral,offmychest,tier3_distant_supervision
+Looks really good! TY! Will watch it tonight,Looks,positive,NetflixBestOf,tier3_distant_supervision
+What campaign? He is already president.,campaign,positive,The_Mueller,tier3_distant_supervision
+What campaign? He is already president.,president,positive,The_Mueller,tier3_distant_supervision
+"Thanks man, I managed to feel better by letting loose with some music - definitely a *much* better way to pull out of a dive. ",music,positive,mentalhealth,tier3_distant_supervision
+All ur damage should have overflowed.. So just choose the best looking one.,damage,positive,assassinscreed,tier3_distant_supervision
+"I’m not usually into ASMR, but I’ll look into it! Thank youu",ASMR,positive,BeautyGuruChatter,tier3_distant_supervision
+[NAME] looks veeeery nervous,NAME,neutral,rugbyunion,tier3_distant_supervision
+I wouldn’t recommend expensive brands in this subreddit. People get irrationally angry and condescending.,brands,negative,chicago,tier3_distant_supervision
+"will watch the films, thanks for the recommendation ",films,positive,China,tier3_distant_supervision
+What a homie.,homie,positive,LetsNotMeet,tier3_distant_supervision
+I'm just now going through the replies on this thread. This is the first person I've looked up on Spotify. Thank u for the recommendation!,Spotify,positive,reddeadredemption2,tier3_distant_supervision
+You need medical help.,medical,positive,confession,tier3_distant_supervision
+My 2 best girls in the series combined into one and [NAME] with [NAME] colors is so beautiful :),girls,positive,danganronpa,tier3_distant_supervision
+My 2 best girls in the series combined into one and [NAME] with [NAME] colors is so beautiful :),colors,positive,danganronpa,tier3_distant_supervision
+"Midnight has been 4/4 pro league teams they have played so far, so I wouldn't be too sure they're gonna be bottom feeders",Midnight,negative,CoDCompetitive,tier3_distant_supervision
+"Been there, done that. Still alive and remarkably healthy at 51. The body is tremendously resilient",body,positive,IncelTears,tier3_distant_supervision
+My goodness. Your such a fucking manchild.,manchild,negative,PUBGXboxOne,tier3_distant_supervision
+brooks running shoes and you will never have a sore back or feet in your life again,brooks,neutral,KitchenConfidential,tier3_distant_supervision
+brooks running shoes and you will never have a sore back or feet in your life again,shoes,neutral,KitchenConfidential,tier3_distant_supervision
+brooks running shoes and you will never have a sore back or feet in your life again,back,neutral,KitchenConfidential,tier3_distant_supervision
+Basically. My step dad didn't choose to break his back and his knees. The whale chose to overeat and become obese,whale,neutral,rant,tier3_distant_supervision
+Now change the guys face to [NAME] and you are golden.,guys,neutral,China,tier3_distant_supervision
+remind me of this kid. Young people just being innocent on the internet,kid,neutral,videos,tier3_distant_supervision
+"I’ve legitimately never heard anything about disabled men relying on prostitution, nor have I heard any arguments using disabled men as a rationalization for prostitution.",prostitution,neutral,AskFeminists,tier3_distant_supervision
+Wow excellent shot,shot,positive,SaltLakeCity,tier3_distant_supervision
+Love the guy complaining the panel is stacked against the rich what with all the high tax rhetoric. *The WORLD is stacked against the rest of us.*,guy,neutral,LateStageCapitalism,tier3_distant_supervision
+Love the guy complaining the panel is stacked against the rich what with all the high tax rhetoric. *The WORLD is stacked against the rest of us.*,panel,neutral,LateStageCapitalism,tier3_distant_supervision
+"she has a lot of lore, read the comics. and yes she's the best designed character from MKX along with [NAME] and maybe kotal",character,neutral,MortalKombat,tier3_distant_supervision
+"Verisimilitude, which here means, utter bs meant to help justify terrible favouritism.",favouritism,neutral,rpghorrorstories,tier3_distant_supervision
+> Love is more important than some job. You can't be serious? Please tell me you're just joking.,job,positive,datingoverthirty,tier3_distant_supervision
+"it grows on you, fresh packs of creme are actually pretty tasty and they hit right ",creme,positive,juul,tier3_distant_supervision
+Good lad!,lad,positive,NewOrleans,tier3_distant_supervision
+**You are breaking the car!**,car,negative,nonononoyes,tier3_distant_supervision
+It’s possible that the dog just escaped. Especially since it might be excited by the massive crowd running,dog,positive,AnimalsBeingBros,tier3_distant_supervision
+It’s possible that the dog just escaped. Especially since it might be excited by the massive crowd running,crowd,positive,AnimalsBeingBros,tier3_distant_supervision
+"Haha, nice try mom. *dabs*",mom,positive,WhitePeopleTwitter,tier3_distant_supervision
+Not everyone has given up on Wigs. We’re much better off staying the course.,course,neutral,timberwolves,tier3_distant_supervision
+If you have to do side task you consider boring in order to power up and take on the main quest I'd consider that grinding.,task,positive,Games,tier3_distant_supervision
+If you have to do side task you consider boring in order to power up and take on the main quest I'd consider that grinding.,quest,positive,Games,tier3_distant_supervision
+"But all-Korean teams don't always do the best in OWL/Contenders, look at Outlaws v. Seoul, etc... ",teams,negative,Competitiveoverwatch,tier3_distant_supervision
+Why are you nervous about getting fired if you aren’t doing anything wrong? If I were an employer firing an employee would be my last resort.,fired,neutral,korea,tier3_distant_supervision
+Why are you nervous about getting fired if you aren’t doing anything wrong? If I were an employer firing an employee would be my last resort.,employer,neutral,korea,tier3_distant_supervision
+Why are you nervous about getting fired if you aren’t doing anything wrong? If I were an employer firing an employee would be my last resort.,employee,neutral,korea,tier3_distant_supervision
+"They can lock the doors all they want, unless they have the child locks turned on there's nothing stopping me from unlocking the door. ",lock,positive,toronto,tier3_distant_supervision
+"They can lock the doors all they want, unless they have the child locks turned on there's nothing stopping me from unlocking the door. ",doors,positive,toronto,tier3_distant_supervision
+"They can lock the doors all they want, unless they have the child locks turned on there's nothing stopping me from unlocking the door. ",child locks,positive,toronto,tier3_distant_supervision
+i say no or in da club if they come to damce with me i walk away,club,negative,seduction,tier3_distant_supervision
+Damn. I want to see some of those comments!,comments,negative,ChoosingBeggars,tier3_distant_supervision
+When did you apply for this? The new AFI was published Oct of 2018. Have you already PCSed from Korea?,apply,neutral,AirForce,tier3_distant_supervision
+"> The porn that I downloaded was Brazzers produced. In case you don't know, Brazzers is ***anal*** about their IP. Ha get fucked.",porn,negative,tifu,tier3_distant_supervision
+"yeeey [NAME], My purpose has been fulfilled Now I must go",purpose,positive,forhonor,tier3_distant_supervision
+He’s only caught herpes twice.,herpes,neutral,RoastMe,tier3_distant_supervision
+I got a free Razor for being a student so I'm a net loss on their company :D,Razor,positive,MensRights,tier3_distant_supervision
+"She threw it in the trash? Pig! Wash it down the sink, even if it's a pancake.",trash,neutral,DiWHY,tier3_distant_supervision
+"She threw it in the trash? Pig! Wash it down the sink, even if it's a pancake.",sink,neutral,DiWHY,tier3_distant_supervision
+"She threw it in the trash? Pig! Wash it down the sink, even if it's a pancake.",pancake,neutral,DiWHY,tier3_distant_supervision
+Do math and drive. I cook. Ain't much else to tell.,cook,positive,gay_irl,tier3_distant_supervision
+Oh gosh that's no good! Perhaps the other options are better places to start,options,negative,StLouis,tier3_distant_supervision
+"Agree. Not a perfect coach but pretty, pretty good ",coach,positive,minnesotavikings,tier3_distant_supervision
+"Ah Princess [NAME], the [NAME] of our childhoods",Princess,positive,gay_irl,tier3_distant_supervision
+"My [NAME], check your corners people. I guess it's harder on console to let the team know though.",console,negative,BattlefieldV,tier3_distant_supervision
+I believe I have just sent you an invite,invite,neutral,Brawlhalla,tier3_distant_supervision
+"Being in FL keeps most of the cold at bay, but I've been layering for the last couple days.",cold,neutral,OkCupid,tier3_distant_supervision
+Vista tower is going to be such a cool addition to the skyline when the glass is installed!,Vista tower,neutral,chicago,tier3_distant_supervision
+Vista tower is going to be such a cool addition to the skyline when the glass is installed!,skyline,neutral,chicago,tier3_distant_supervision
+Vista tower is going to be such a cool addition to the skyline when the glass is installed!,glass,neutral,chicago,tier3_distant_supervision
+The puppy is actually suggesting that the use of laptop to be repulsive. ^^^^PCMR4Lyfe,laptop,neutral,AnimalsBeingJerks,tier3_distant_supervision
+Sadly I think this is true & maybe this is the incentive adults need to get into action,incentive,negative,Teachers,tier3_distant_supervision
+Kids in Africa could have eaten those cigarettes.. :( Kidding. Good for you man. Congrats!,cigarettes,positive,pics,tier3_distant_supervision
+"My favorite pod when they are fresh & clear. Sadly, all of my recent packs look like dark brown syrup pods. ",pod,negative,juul,tier3_distant_supervision
+Garlic butter baked chicken.....put garlic butter on chicken and bake.,Garlic butter baked chicken,neutral,GifRecipes,tier3_distant_supervision
+"Have fun toasting expired marshmallows in hell, lady-killer POS.",POS,positive,ProtectAndServe,tier3_distant_supervision
+"So, the cops raided my favorite massage parlor today.",cops,negative,AnimalsBeingJerks,tier3_distant_supervision
+"So, the cops raided my favorite massage parlor today.",massage parlor,negative,AnimalsBeingJerks,tier3_distant_supervision
+I can respect profiting from morons.,morons,positive,nonononoyes,tier3_distant_supervision
+I find it really strange how people align themselves with or against a politician so strongly.,politician,positive,nyc,tier3_distant_supervision
+"“Wow. Just .. wow. Read a book, sweatie!”",a,positive,KotakuInAction,tier3_distant_supervision
+"I used them too, did a great job but they were super expensive.",job,neutral,houston,tier3_distant_supervision
+I have a big family of artists,family,neutral,delusionalartists,tier3_distant_supervision
+"There are two other choices as well, each of them slightly better than the two terrible choices.",choices,positive,television,tier3_distant_supervision
+"Lol. Yes! [NAME] and his $14,000 suit love you but please don't touch him.",suit,positive,exchristian,tier3_distant_supervision
+You have another new follower 😊 love your work!,work,positive,DiWHY,tier3_distant_supervision
+"Ah, Farmville. Those were dark days.",Farmville,neutral,antiMLM,tier3_distant_supervision
+"Good on you dude. I'm west coast, but I'd love if anyone ever finds themselves in Seattle, I extend this offer.",offer,positive,KitchenConfidential,tier3_distant_supervision
+"And of course, instead of calling out the men responsible for this behavior, the ""Not all men"" crowd has arrived in full force.",men,positive,TrollXChromosomes,tier3_distant_supervision
+"And of course, instead of calling out the men responsible for this behavior, the ""Not all men"" crowd has arrived in full force.",crowd,positive,TrollXChromosomes,tier3_distant_supervision
+Good job partner!,job partner,positive,reddeadredemption,tier3_distant_supervision
+FEAR THE TURTLE,TURTLE,negative,ripcity,tier3_distant_supervision
+Genius here thinks I'm a mod. *grabs popcorn*,popcorn,neutral,onguardforthee,tier3_distant_supervision
+"“[NAME], I tried to make ramen in the coffee pot and I broke everything” - [NAME]",make,negative,PandR,tier3_distant_supervision
+"“[NAME], I tried to make ramen in the coffee pot and I broke everything” - [NAME]",the coffee,negative,PandR,tier3_distant_supervision
+You know the bulks going well when you ate that much last night that breakfast is a struggle,bulks,positive,bodybuilding,tier3_distant_supervision
+You know the bulks going well when you ate that much last night that breakfast is a struggle,breakfast,positive,bodybuilding,tier3_distant_supervision
+"An imaginary god won't make you feel better, that's right, just the one true Living and Eternal God of Great Mercy who loves you.",god,positive,BPD,tier3_distant_supervision
+"By the end of the trailer, I actually forgot spidey is dust for now.",spidey,neutral,movies,tier3_distant_supervision
+nice try balance team,team,positive,Competitiveoverwatch,tier3_distant_supervision
+"Stranger things have happened, but still, good luck.",luck,positive,hawks,tier3_distant_supervision
+"I think I get this reference, GradeAUnderA?",reference,positive,MensRights,tier3_distant_supervision
+"Thing is, some fans will *never* be happy. There is nothing that can be done to please them. That's the problem.",fans,negative,starwarsspeculation,tier3_distant_supervision
+"Behavior I'd consider deeply immoral without showing true remorse (I'm talking rape, torture of animals, that sort of thing).",Behavior,neutral,entp,tier3_distant_supervision
+"That sounds awful )-: I'm so grateful that my parents and therapist want to let me figure this out with minimal ""supervision""",therapist,positive,EDAnonymous,tier3_distant_supervision
+Idk if I’m wrong but I think they gave her some piercings on her ear which are cool too,piercings,positive,TheWalkingDeadGame,tier3_distant_supervision
+I'm more saying that I think the south is a joke.,south,positive,barstoolsports,tier3_distant_supervision
+What a god,god,negative,LGBTeens,tier3_distant_supervision
+That's a big meal.,meal,positive,onguardforthee,tier3_distant_supervision
+I dont get into politics much but if they want to echo chamber leave them alone it wont change them they will only get more angry,echo chamber,neutral,MurderedByWords,tier3_distant_supervision
+Pilots omg... you are not alone there!,Pilots,positive,datingoverthirty,tier3_distant_supervision
+I tip my invisible hat anytime I drive past this dealership. What an unfortunate surname.,surname,negative,justneckbeardthings,tier3_distant_supervision
+My cat still loves me after I tripped over them in the dark on my way to the bathroom how are animals so amazing,cat,positive,wholesomememes,tier3_distant_supervision
+This is a slippery slippery slope that ends with the backstory to the Wrath of Khan dude.,Khan,neutral,worldnews,tier3_distant_supervision
+I needs that ship skin!,ship,neutral,Seaofthieves,tier3_distant_supervision
+Ooft! Brave attempt to spin the tories losing in Scotland again.,tories,neutral,Scotland,tier3_distant_supervision
+I think some of them expect there to be a cashier standing like a statue at every register at all times no matter how slow business is!,cashier,neutral,TalesFromRetail,tier3_distant_supervision
+I think some of them expect there to be a cashier standing like a statue at every register at all times no matter how slow business is!,register,neutral,TalesFromRetail,tier3_distant_supervision
+"The biggest argument on your side is depreciate costs. You could challenge their concern of ""getting fooled"" by getting the car inspected by an independent.",costs,neutral,askcarsales,tier3_distant_supervision
+"Easy money, thank you [NAME]",money,positive,steelers,tier3_distant_supervision
+"They probably take slight step back, by that I mean still the best defense in the league, but closer.",defense,positive,GreenBayPackers,tier3_distant_supervision
+"It was a very faithful remake, though. They just crashed the plane without planning out what to do next.",plane,positive,politics,tier3_distant_supervision
+"If you kill a spider instead of putting it outside, you are a grade A bitchmade babyman.",spider,neutral,melbourne,tier3_distant_supervision
+This dude was joking. OP is retarded,dude,positive,iamverysmart,tier3_distant_supervision
+He is the main character. They are gonna have him in every episode somehow lol,main character,positive,arrow,tier3_distant_supervision
+"Hey man skol vikings. Support however you’d like, just as long as you support ",Support,positive,minnesotavikings,tier3_distant_supervision
+I have no confidence to boost,confidence,negative,IncelsWithoutHate,tier3_distant_supervision
+"I just learned about mukbang yesterday from a foreign exchange student. What luck, didn't realize they were popular outside of Asia.",mukbang,positive,fatlogic,tier3_distant_supervision
+"Yeah. If they actually tested their patch, they would've found out about these things.",patch,neutral,BattlefieldV,tier3_distant_supervision
+Tbh bastion is still super op before it now I can just abuse him more,bastion,negative,Overwatch,tier3_distant_supervision
+Thank you for correcting me on these! I have taken them down. I will do more research in the future.,research,positive,Connecticut,tier3_distant_supervision
+I remember writing on them was horrible. Slight delay which threw me off combined with the letters ending up looking like crap. Whiteboard was so much easier.,writing,neutral,funny,tier3_distant_supervision
+I remember writing on them was horrible. Slight delay which threw me off combined with the letters ending up looking like crap. Whiteboard was so much easier.,Whiteboard,neutral,funny,tier3_distant_supervision
+Playoffs are the most important games... hence why [NAME] is considered to be the best *regular season* QB and not the best,Playoffs,neutral,nyjets,tier3_distant_supervision
+"A ""Texas DUI"" sounds like a weird sex move. ",DUI,negative,bestoflegaladvice,tier3_distant_supervision
+"[NAME] was our second best hitter, [NAME] was the best",hitter,positive,NewYorkMets,tier3_distant_supervision
+The age of consent is 16 in Massachusetts. Unless they’re sending nude pictures he’s not doing anything illegal.,pictures,positive,legaladvice,tier3_distant_supervision
+I'm glad the republican won cause I want the best high I have had 5 back surgeries and need another.,high,positive,SubredditSimulator,tier3_distant_supervision
+Oh but they will be sweet photos to look at in the future.,photos,positive,90dayfianceuncensored,tier3_distant_supervision
+I already like the game. I don't to make the wins gimmicky for the game to be fun.,game,positive,Blackops4,tier3_distant_supervision
+I already like the game. I don't to make the wins gimmicky for the game to be fun.,wins,positive,Blackops4,tier3_distant_supervision
+Something something broken arms,arms,neutral,tifu,tier3_distant_supervision
+Good retort! Thank you for your contribution to the discussion.,retort,positive,GetMotivated,tier3_distant_supervision
+"I was like you man, 3 felt so bad. But street part 4 3 becomes a so bad it's hilarious imo.",man,positive,Games,tier3_distant_supervision
+"Only through surgery, steriods, and a high income. Personality is not a factor for woman, looks and status are",income,neutral,PurplePillDebate,tier3_distant_supervision
+Did [NAME] mention the astroturf pitch after today's comfortable 3-0 win? He certainly made a big fuss about it after the loss at Rugby Park.,pitch,negative,ScottishFootball,tier3_distant_supervision
+The dept I work in went a few weeks ago for an afternoon thing.,dept,neutral,youseeingthisshit,tier3_distant_supervision
+The dept I work in went a few weeks ago for an afternoon thing.,afternoon,neutral,youseeingthisshit,tier3_distant_supervision
+Delete your account.,account,neutral,lewronggeneration,tier3_distant_supervision
+"Counter's clean, you're welcome!",Counter,positive,AnimalsBeingJerks,tier3_distant_supervision
+"If reincarnation is real, I hope next time I have a name that's half as awesome as [NAME].",name,positive,gaybros,tier3_distant_supervision
+"No, it was believed that the baby absorbed maternal traits because the mother was the ""soil"" the ""seed"" grew in. ",baby,negative,bestoflegaladvice,tier3_distant_supervision
+Eh my doctor isn't a GP. She knows her shit.,doctor,positive,canadients,tier3_distant_supervision
+"Yeah, what do you know about her? Her Wikipedia page is pretty barren.",Wikipedia,negative,VoteBlue,tier3_distant_supervision
+"I didn't get it the first time, thank you for replying me.",replying,positive,entitledparents,tier3_distant_supervision
+Franchise QB's are leaders who set the tone for the entire lockerroom. [NAME] is a terrible leader.,lockerroom,negative,steelers,tier3_distant_supervision
+"You do realize the documentary is about the policy not being so natural, as you put it",policy,neutral,Documentaries,tier3_distant_supervision
+Good because I've been waiting since September!,waiting,positive,QuadrigaCX,tier3_distant_supervision
+Good thing they were all about to jump when it happened. Do you know what happened to the pilots?,pilots,positive,nononono,tier3_distant_supervision
+"Sorry, new at ",new,negative,ShitPoliticsSays,tier3_distant_supervision
+"If you do, the defecation will impact the rotary oscillating atmospheric circulation device.",device,neutral,ProRevenge,tier3_distant_supervision
+Yeah. I wish I had some stories like [NAME] but I’m also grad I don’t.,grad,neutral,entitledparents,tier3_distant_supervision
+Just take them and get them vaccinated without his knowledge. Only one parent is needed. Dont even tell him after it's done.,vaccinated,positive,relationship_advice,tier3_distant_supervision
+Just take them and get them vaccinated without his knowledge. Only one parent is needed. Dont even tell him after it's done.,parent,positive,relationship_advice,tier3_distant_supervision
+Ok so the scape goat is gone. No more excuses now [NAME].,scape goat,negative,detroitlions,tier3_distant_supervision
+Probably overdose in a hotel after losing my virginity to an escort on my 30th birthday,escort,positive,IncelsWithoutHate,tier3_distant_supervision
+You're such a good troll. Good job! Way to really get into that part. You nailed it!,troll,positive,MurderedByWords,tier3_distant_supervision
+Maybe make the lights with the towel technique and see how bad it looks,lights,negative,DiWHY,tier3_distant_supervision
+"I think it was Volantis, but yeah I agree.",Volantis,positive,freefolk,tier3_distant_supervision
+They call it the hub and spoke system. They neglected to include a wheel.,hub,negative,SeattleWA,tier3_distant_supervision
+They call it the hub and spoke system. They neglected to include a wheel.,wheel,negative,SeattleWA,tier3_distant_supervision
+Fuck taking the high road. If I’m [NAME] I’m blasting the officials when I speak to the media.,officials,negative,barstoolsports,tier3_distant_supervision
+Congratulations! Your kids are very lucky to have a strong and positive parent :),parent,positive,NarcissisticAbuse,tier3_distant_supervision
+"I regale them with stories of times when the dfaq runs out of chocolate cake, reminding them that we too can sometimes have it rough. ",chocolate cake,neutral,AirForce,tier3_distant_supervision
+That’s is 100% the noise. Perfect!,noise,neutral,KidsAreFuckingStupid,tier3_distant_supervision
+Agghh this is amazing! Wish I had thought of something like this when I was leaving retail!,retail,positive,MaliciousCompliance,tier3_distant_supervision
+Destroyed property is the same as lynching someone for their race.,property,positive,ENLIGHTENEDCENTRISM,tier3_distant_supervision
+They're holding out for as much as possible... some mysteries arent that hard to solve,mysteries,neutral,Dodgers,tier3_distant_supervision
+"Money can’t buy happiness, but it can make getting there a hell of a lot easier.",Money,neutral,gatekeeping,tier3_distant_supervision
+I think a six month prison sentence is in order for that missed tackle against the cowgirls. Maybe some community service if he's got a good lawyer.,lawyer,positive,NYGiants,tier3_distant_supervision
+You win one internet!,internet,positive,JUSTNOFAMILY,tier3_distant_supervision
+10? If they're teens their original joint apparently didn't last that long.,joint,negative,fatlogic,tier3_distant_supervision
+coincidences happen :P,coincidences,neutral,TownofSalemgame,tier3_distant_supervision
+I’m so glad someone linked it. You’re doing the important work. 🤣,work,positive,nononono,tier3_distant_supervision
+"I agree with that, that's really the only reason I play pk too. Probably the reason my win rate for her is 40%",win rate,positive,CompetitiveForHonor,tier3_distant_supervision
+this is great TV. I want to see her do this on Legends,TV,positive,arrow,tier3_distant_supervision
+He lost his shoes. He’s legally dead.,shoes,negative,HadToHurt,tier3_distant_supervision
+Or an infection from his gross fingernails.,fingernails,neutral,loveafterlockup,tier3_distant_supervision
+And still so few go to college): Such a broken system.,college,neutral,Futurology,tier3_distant_supervision
+And still so few go to college): Such a broken system.,system,neutral,Futurology,tier3_distant_supervision
+80k/month? Damn. I need to become a Union Square store,store,neutral,sanfrancisco,tier3_distant_supervision
+Amazing doggo 😍,doggo,positive,dogswithjobs,tier3_distant_supervision
+I wouldnt mind seeig a few rushes with that NFL overhead cam.,cam,neutral,hockey,tier3_distant_supervision
+Finally a whole season and 3 jornadas too late.,season,negative,LigaMX,tier3_distant_supervision
+Baby rape. Can’t make a funny joke about it.,Baby,negative,unpopularopinion,tier3_distant_supervision
+Same here. The ones who know me and my obsession always let me know and it makes me happy.,obsession,positive,starbucks,tier3_distant_supervision
+I'm not a victim at all. You're just a desperate loser who spends money on a guy he could watch for free.,guy,negative,Seaofthieves,tier3_distant_supervision
+Oh you're the life of the party.,party,positive,exmuslim,tier3_distant_supervision
+What the actual hell?,hell,neutral,awfuleverything,tier3_distant_supervision
+He could have spent way less money on backpage when it was still around or Craigslist...would have gotten around the same quality or better too.,money,positive,loveafterlockup,tier3_distant_supervision
+He could have spent way less money on backpage when it was still around or Craigslist...would have gotten around the same quality or better too.,Craigslist,positive,loveafterlockup,tier3_distant_supervision
+He could have spent way less money on backpage when it was still around or Craigslist...would have gotten around the same quality or better too.,quality,positive,loveafterlockup,tier3_distant_supervision
+"I have a TKL so no numpad, bummer.",numpad,neutral,Smite,tier3_distant_supervision
+"always try to avoid triggers - my last 12 day streak was suddenly toppled by a trigger - no urges and then, suddenly, a *massive* urge",triggers,neutral,NoFap,tier3_distant_supervision
+>you never learn anything ever from university This is not true,learn,neutral,rant,tier3_distant_supervision
+>you never learn anything ever from university This is not true,university,neutral,rant,tier3_distant_supervision
+"Was referring to their government, should have specified that better. ",government,negative,samharris,tier3_distant_supervision
+I'd punt her to another planet if she said that about my dog. Wtf is wrong with people. 😠,dog,negative,entitledparents,tier3_distant_supervision
+Congrats! How long was the journey? Did you stick with [NAME] the entire time?,time,positive,Tekken,tier3_distant_supervision
+And don’t tell Uber you ever saw it,Uber,neutral,uberdrivers,tier3_distant_supervision
+With those ugly f'n belts,belts,neutral,SquaredCircle,tier3_distant_supervision
+"Game pass has a lot of good games you get aswell, id look at them first",Game pass,neutral,Seaofthieves,tier3_distant_supervision
+"Game pass has a lot of good games you get aswell, id look at them first",games,neutral,Seaofthieves,tier3_distant_supervision
+"The last thing I want on my team are former Eagles players. Fuck that team, the organization, and the shitty fanbase ",organization,negative,NYGiants,tier3_distant_supervision
+"The last thing I want on my team are former Eagles players. Fuck that team, the organization, and the shitty fanbase ",fanbase,negative,NYGiants,tier3_distant_supervision
+Just doesn't really work if the DM doesn't want it to...,DM,negative,rpghorrorstories,tier3_distant_supervision
+Refusing to pay someone for work that they've done is theft. You can try to justify it any way you want but that's what it is.,work,positive,TopMindsOfReddit,tier3_distant_supervision
+A surprise to be sure! But a welcome one,surprise,positive,entertainment,tier3_distant_supervision
+But the Hijab is mandated by (and therefore connected to) political Governments and political groups that otherwise do some pretty oppressive things.,Hijab,neutral,AskALiberal,tier3_distant_supervision
+That's not how tl;dr's work,dr,neutral,relationships,tier3_distant_supervision
+This hit me with de good ol memories,memories,positive,Paladins,tier3_distant_supervision
+Just speak with a Sheffield accent lmao,accent,positive,confessions,tier3_distant_supervision
+"At least you went out! For what it's worth, I definitely would have gone out with you if you were near me.",worth,positive,socialanxiety,tier3_distant_supervision
+"I like how he just watches as it happens too, reminds me of what a cat would do.",cat,neutral,Wellthatsucks,tier3_distant_supervision
+Seems like you jerk off looking at mirror while you’re crying,mirror,negative,confession,tier3_distant_supervision
+"My bad sorry, what I meant to say is ‘for our winning season’ not ‘in our’.",season,negative,realmadrid,tier3_distant_supervision
+U can still pour it out the lock holes. Hook it up,lock,positive,Wellthatsucks,tier3_distant_supervision
+Looks like an HD image of the moon.....that garlic bread doesnt look too bad tho,garlic bread,positive,shittyfoodporn,tier3_distant_supervision
+"I had to give up college 2 times because of that. Now im doing kinda better, at least i can go to classes and talk to people.",college,positive,socialanxiety,tier3_distant_supervision
+"[NAME] 👩👩👩 this Is for real, this makeup 💄 💄💋 makes you glow 🌟✨ no 🚫🚫🚫🚫 filters needed 💯💯💯💯💯",this makeup,positive,insanepeoplefacebook,tier3_distant_supervision
+i was expecting a kitty,kitty,positive,nonononoyes,tier3_distant_supervision
+...and his last one was in New Orleans. Let’s go Rams!,go,positive,minnesotavikings,tier3_distant_supervision
+"Thanks dude, speaking of the Sahara thay is how dry our texting has gotten. Any tips to spark it back up?",texting,positive,seduction,tier3_distant_supervision
+Sadly that's probably the worst game I've ever seen [NAME] play.,game,negative,Mavericks,tier3_distant_supervision
+I know a guy who is 25 (same age as me) and has FOUR. I would hate my life so much.,guy,negative,childfree,tier3_distant_supervision
+"[NAME] were the peak memes back when I first started on Reddit. Honestly none of the meme subs are good, they're all pretty cringy. ",subs,negative,terriblefacebookmemes,tier3_distant_supervision
+Thanks for the warning 😉,warning,positive,TrollXChromosomes,tier3_distant_supervision
+Also thank you for the advice.,advice,positive,gay,tier3_distant_supervision
+Only in portland,portland,positive,facepalm,tier3_distant_supervision
+Yeah no haha. Out of my price range tbh,price range,neutral,southafrica,tier3_distant_supervision
+With Everyday passing day without a good signing I feel like we got robbed in this trade,signing,negative,Dodgers,tier3_distant_supervision
+“Inside sources” really don’t help the story even if this is true,Inside,negative,CFB,tier3_distant_supervision
+Be Advised “stay away from alcohol” Focus on the kids Do not engage on a campaign for justice Get well soon bro.,alcohol,positive,survivinginfidelity,tier3_distant_supervision
+"I haven't seen the chet response, but I cannot imagine myself not telling that person to go to hell and enjoy a lone existence.",response,neutral,OkCupid,tier3_distant_supervision
+Randomly watched arrow this week and I think each year is more confusing and I didn't like it! At least [NAME] is still there and always shining!,arrow,negative,arrow,tier3_distant_supervision
+How dare they not have the foresight to realize he'll become a president we don't like decades later.,president,negative,KotakuInAction,tier3_distant_supervision
+"Yeah whether or not an animal is cute is pretty subjective, I was just in a bad mood when I wrote the post honestly.",animal,neutral,ProRevenge,tier3_distant_supervision
+"Please correct me if I'm wrong, but I thought that the name changes had more to do with legal issues then geographical ones.",name,neutral,minnesotavikings,tier3_distant_supervision
+So can we all collectively accept that [NAME] has a high placement for this week? Okay thank you,placement,positive,SpoiledDragRace,tier3_distant_supervision
+Any chance we could treat the terrorists as terrorists then?,terrorists,negative,onguardforthee,tier3_distant_supervision
+Looks like he drops the chainsaw right as the branch hits him,chainsaw,neutral,instant_regret,tier3_distant_supervision
+Looks like he drops the chainsaw right as the branch hits him,branch,neutral,instant_regret,tier3_distant_supervision
+Every single [NAME] should have the right to import by mail any medicine from all over the world and nobody should be allowed to stop them.,medicine,positive,WayOfTheBern,tier3_distant_supervision
+This article was written so poorly that it's hard to take seriously. It's like a stream of consciousness with very little to actually say,article,neutral,chicagobulls,tier3_distant_supervision
+Honestly I’ve seen kids that age do really gross stuff,stuff,negative,thatHappened,tier3_distant_supervision
+Just a joke post on how someone will go through blah blah blah and come out on top.,post,neutral,woooosh,tier3_distant_supervision
+"We had 2 1000 yrd receivers, why would we add a 3rd?",receivers,neutral,minnesotavikings,tier3_distant_supervision
+"There is nothing this Government could cut that wouldn't upset someone. Sorry, but weez broke.",cut,negative,ontario,tier3_distant_supervision
+It’s a party and we’re all invited,party,positive,canes,tier3_distant_supervision
+This is why I clean my belly button every day. That’s disgusting,button,negative,todayilearned,tier3_distant_supervision
+Sounds really boring so I hope you like it,Sounds,positive,HadToHurt,tier3_distant_supervision
+"also rough translation of the chinese: ""very beautiful octopus."" (probably wrong) ",octopus,positive,australia,tier3_distant_supervision
+Bet that'd cut down on road traffic accidents.,traffic,neutral,Scotland,tier3_distant_supervision
+"Bubble Bass should try it, just DON'T FORGET THE PICKLES!! ",Bubble Bass,positive,Futurology,tier3_distant_supervision
+"Bubble Bass should try it, just DON'T FORGET THE PICKLES!! ",PICKLES,positive,Futurology,tier3_distant_supervision
+"i had all of those. checked myself with a GP and found out i had low iron, migraines and needed to visit the therapist re my anxiety.",therapist,neutral,ForeverAlone,tier3_distant_supervision
+Wow. Yeah does your place autograt at 8 or more ? So sorry 😐,autograt,neutral,TalesFromYourServer,tier3_distant_supervision
+105 strikeouts over 81 2/3 innings. that's good lol [NAME],strikeouts,positive,NYYankees,tier3_distant_supervision
+Apple can still go kindly fuck itself tho,Apple,negative,traaaaaaannnnnnnnnns,tier3_distant_supervision
+I will tell my NP he may have inspired pancakes in someone's future :),pancakes,neutral,polyamory,tier3_distant_supervision
+Looks like he's got the funk.,funk,positive,ExpectationVsReality,tier3_distant_supervision
+Saying that combo with a straight face after the fucking mess that went into the last UFC event should be hard.,combo,neutral,MMA,tier3_distant_supervision
+Haha this the best [NAME] answer to this question. Right to the point. <3,answer,positive,AskMenOver30,tier3_distant_supervision
+Now that I've gone solar I'll never go back,solar,neutral,Denver,tier3_distant_supervision
+He wasn't beat over the top all season. I think the longest pass he allowed was around 20 yards.,pass,neutral,steelers,tier3_distant_supervision
+Llanberis is in one of the most beautiful places in Europe and I am delighted that the local Chinese takeaway speaks Welsh. Cymru am Byth !!!!,Chinese takeaway,positive,ukpolitics,tier3_distant_supervision
+"Thanks, didn’t know there was a term for it. That’s how I handled the first and last episode I saw lol",term,positive,BPDlovedones,tier3_distant_supervision
+"Thanks, didn’t know there was a term for it. That’s how I handled the first and last episode I saw lol",episode,positive,BPDlovedones,tier3_distant_supervision
+"> If you have a point - make it. I did, I'm sorry you missed it.",point,negative,atheism,tier3_distant_supervision
+Take a really cold bath before you go to class.,bath,neutral,self,tier3_distant_supervision
+Take a really cold bath before you go to class.,class,neutral,self,tier3_distant_supervision
+"I just drank some chocolate milk, now I'm a 9/10 supermodel with a great husband and my own island in a tropical location. Thanks! /s",chocolate milk,positive,ForeverAlone,tier3_distant_supervision
+"I just drank some chocolate milk, now I'm a 9/10 supermodel with a great husband and my own island in a tropical location. Thanks! /s",location,positive,ForeverAlone,tier3_distant_supervision
+Love me some Clash,Clash,positive,london,tier3_distant_supervision
+1+1 = 2 1+1(+1) = 3 Know all the facts before you do your maths,facts,neutral,im14andthisisdeep,tier3_distant_supervision
+THINK OF THE😤😤😤GENERATIONS OF NEWS🇺🇸😞🇺🇸THAT GETS LOST WHEN THESE YOUNG UNS 👲👲👹STOP LOVING NEWS📰PAPERS I FOR ONE🇺🇸😎🇺🇸SUPPORT OUR NEWS📰PAPER INDUSTRY🇺🇸🏭🇺🇸,NEWS📰PAPERS,negative,thatHappened,tier3_distant_supervision
+THINK OF THE😤😤😤GENERATIONS OF NEWS🇺🇸😞🇺🇸THAT GETS LOST WHEN THESE YOUNG UNS 👲👲👹STOP LOVING NEWS📰PAPERS I FOR ONE🇺🇸😎🇺🇸SUPPORT OUR NEWS📰PAPER INDUSTRY🇺🇸🏭🇺🇸,NEWS📰PAPER INDUSTRY🇺🇸🏭🇺🇸,negative,thatHappened,tier3_distant_supervision
+Can you expand a bit? That would be interesting for us that are not in the know.,expand,negative,syriancivilwar,tier3_distant_supervision
+Thank you for sharing your experience. It adds much needed hope.,hope,positive,JustNoSO,tier3_distant_supervision
+For sure...sometimes I feel like I will just evaporate into nothingness as the stranger in the mirror looks on.,mirror,negative,BPD,tier3_distant_supervision
+That’s only really annoying if it’s excessively slow,slow,negative,IdiotsInCars,tier3_distant_supervision
+"""If you don't support no go zones, you are racist!""",zones,negative,ShitPoliticsSays,tier3_distant_supervision
+"Either they don’t understand the meta context of it, or aren’t fans of such a meta ending.",ending,positive,danganronpa,tier3_distant_supervision
+The fact that her pillows are brown is way more disturbing to me,pillows,negative,My600lbLife,tier3_distant_supervision
+Dude who knows u cant tell what a chemical is based on taste,taste,neutral,benzodiazepines,tier3_distant_supervision
+Yeah being up by 20 every game does that unfortunately,game,negative,nyjets,tier3_distant_supervision
+> [NAME] doesn't even agree with you. What does she not agree with?,NAME,neutral,MakingaMurderer,tier3_distant_supervision
+Also stay hydrated! That was a mistake I was constantly making too,hydrated,neutral,EDAnonymous,tier3_distant_supervision
+"And that’s assuming all your organs are in good condition, if you smoke or drink heavily you are likely losing lots of value.",value,positive,SubredditDrama,tier3_distant_supervision
+Its natural to fear what is unknown. Especially when someone is trying to force you to open a sketchy box while probably grinning the whole time.,box,neutral,funny,tier3_distant_supervision
+Its natural to fear what is unknown. Especially when someone is trying to force you to open a sketchy box while probably grinning the whole time.,time,neutral,funny,tier3_distant_supervision
+"Constitution don't work that way. Burden is always on the Crown, defendant is always presumed innocent. This won't survive the first challenge.",defendant,neutral,CanadaPolitics,tier3_distant_supervision
+"No, he was hecka hungry and coming down to McDonald’s would mean being caught.",McDonald,neutral,fatlogic,tier3_distant_supervision
+"Chart was clearly made by an 18 year old that thinks 30 is ""old""",Chart,negative,GetMotivated,tier3_distant_supervision
+I will defend common core against parents that are just bad at math until the day I die.,parents,positive,INTP,tier3_distant_supervision
+We absolutely can't leave the first three rounds without an offensive tackle. Preferably Round 1 or 2,offensive,neutral,NYGiants,tier3_distant_supervision
+I think they think that they have created the best cod ever and everyone who doesn't think that is wrong,cod,negative,Blackops4,tier3_distant_supervision
+"Whatever the customer doesn't finish, they save and put it back out and serve it to another customer. Confirmed by former staff.",staff,positive,TalesFromYourServer,tier3_distant_supervision
+I thought she had that same expression when he proposed as well. Or at some point during the proposal dinner,expression,neutral,loveafterlockup,tier3_distant_supervision
+I thought she had that same expression when he proposed as well. Or at some point during the proposal dinner,dinner,neutral,loveafterlockup,tier3_distant_supervision
+The downside being you have to drink Atwater beer.,beer,neutral,Detroit,tier3_distant_supervision
+Oooo sounds lovely. Armpit hair on “fleek”,sounds,positive,90DayFiance,tier3_distant_supervision
+"It's not that bad, I almost got squashed by a drop bear today but it's all good in the hood.",drop,positive,livepd,tier3_distant_supervision
+This comment is complete garbage.,comment,negative,Marriage,tier3_distant_supervision
+Could fit the definition for thyroid disorder as well. Best to leave it to the professionals.,thyroid,neutral,Advice,tier3_distant_supervision
+Petition to smite BuzzFeed and Vice off the face of the internet for the bs they post Thank you,BuzzFeed,positive,gatekeeping,tier3_distant_supervision
+"Totally hamberders the President, thank you",President,positive,worldnews,tier3_distant_supervision
+Wow. Very thorough explanation. Thanks!,explanation,positive,onguardforthee,tier3_distant_supervision
+just give me platinum and go to sleep ♥️,platinum,neutral,teenagers,tier3_distant_supervision
+I like Nurse. He shows grit. This is the stuff [NAME] should be doing.,Nurse,positive,EdmontonOilers,tier3_distant_supervision
+Those backpack leashes suddenly don't seem so bad,backpack leashes,negative,KidsAreFuckingStupid,tier3_distant_supervision
+Don’t you spit facts! Downvote for you (everyone) with no reply. They don’t reply to good arguments just downvote you.,facts,negative,Dodgers,tier3_distant_supervision
+hey at least you've got a friend group chat,group,positive,FunnyandSad,tier3_distant_supervision
+You sound jealous that a seed hasn’t been planted in you,seed,neutral,cringe,tier3_distant_supervision
+There is clearly something really goddamned wrong with the policy then.,policy,positive,liberalgunowners,tier3_distant_supervision
+"What was that behind the back nonsense, criminy. TO THE BENCH",BENCH,negative,DetroitPistons,tier3_distant_supervision
+I recently learned that cats lick to show dominance,cats,neutral,AnimalsBeingBros,tier3_distant_supervision
+"Considering that the picture OP jerked was fake and that the OP of the faked picture was rude as fuck to absolutely EVERYONE, that’s completely false. ",picture,neutral,muacirclejerk,tier3_distant_supervision
+That partially explains why season 4 was such a fucking mess,season,negative,FlashTV,tier3_distant_supervision
+Oh that's a shame. I bought it for $100 but willing to go wayyyy under the original price.,price,negative,brisbane,tier3_distant_supervision
+A fucking power outage during a hurricane and your car is fucked.,power,negative,DiWHY,tier3_distant_supervision
+That’s how I got banned,banned,negative,TopMindsOfReddit,tier3_distant_supervision
+"Yep, whole different story if mom finds her favorite vibrator buzzing on the floor still.",vibrator,neutral,KidsAreFuckingStupid,tier3_distant_supervision
+"To be fair, the illegal should have been out of country. ",illegal,negative,progun,tier3_distant_supervision
+Based on the down votes I can say this is truly an unpopular opinion although it shouldn't be,opinion,negative,unpopularopinion,tier3_distant_supervision
+Baba Yaga has very defined taste.,taste,neutral,ATBGE,tier3_distant_supervision
+Anything can happen. So many upsets have happened at the PLQ. Every team is beatable.,team,positive,CoDCompetitive,tier3_distant_supervision
+Her promo's alone would be a great addition to the promotion.,promo,positive,SquaredCircle,tier3_distant_supervision
+Her promo's alone would be a great addition to the promotion.,promotion,positive,SquaredCircle,tier3_distant_supervision
+I feel sorry for her son that must have been super cringe,son,negative,entitledparents,tier3_distant_supervision
+"At least I can rest easy, knowing [NAME] isn't real ",NAME,neutral,Browns,tier3_distant_supervision
+"I like [NAME] and would like to see him back, but he still makes me nervous at a high price too. ",price,negative,NYYankees,tier3_distant_supervision
+He looks like a genuinely nice guy. He doesn’t look fat and greasy,guy,positive,justneckbeardthings,tier3_distant_supervision
+This makes me want to get nipple piercings but I’m too scared to :/,nipple piercings,negative,youseeingthisshit,tier3_distant_supervision
+There's also a massive pile of newspapers in his front yard!,front yard,neutral,Wellthatsucks,tier3_distant_supervision
+No i didn’t all i know is that i binged 3 seasoms of it.,seasoms,negative,lewronggeneration,tier3_distant_supervision
+"> You first. Really. I have. I reject both, but I can do it separately because they're not necessarily correlated beliefs.",beliefs,neutral,DebateAnAtheist,tier3_distant_supervision
+"The NBA fan was just one year younger last year and probably had the same viewing habits, thus not impacting the results of the year over year comparison. ",NBA,positive,chicagobulls,tier3_distant_supervision
+"Fish tanks and fiddlesticks, that was intense!",Fish tanks,neutral,Roadcam,tier3_distant_supervision
+"Fish tanks and fiddlesticks, that was intense!",fiddlesticks,neutral,Roadcam,tier3_distant_supervision
+And blames the girl and claims it can’t be his,girl,neutral,AskWomen,tier3_distant_supervision
+This is almost as effective as posting that sweet photo of [NAME] old band,band,positive,Enough_Sanders_Spam,tier3_distant_supervision
+Lmao compelling argument bud,argument,positive,canucks,tier3_distant_supervision
+"Don't worry, [NAME]. Her idea of wit is nothing more than an incisive observation humorously phrased and delivered with impeccable timing.",timing,positive,TheSimpsons,tier3_distant_supervision
+Sounds like a really bad time. Just wait till you have a nice time and place to trip.,time,positive,Drugs,tier3_distant_supervision
+Sounds like a really bad time. Just wait till you have a nice time and place to trip.,place,positive,Drugs,tier3_distant_supervision
+Because men are weak/stupid enough to let them.,men,neutral,MensRights,tier3_distant_supervision
+I love this. Now I'm craving tacos in the morning.,tacos,positive,shittyfoodporn,tier3_distant_supervision
+"Grew up watching avatar and [NAME] is one of my favorite video game protagonists, especially when RDR2 came out. ",avatar,positive,teenagers,tier3_distant_supervision
+"Props to YOU for being so appreciative, sir. :) You don't often see it. Good luck out there!",sir,positive,StarWarsBattlefront,tier3_distant_supervision
+TeamViolet going strong fam!,TeamViolet,positive,TheWalkingDeadGame,tier3_distant_supervision
+That isn’t a prediction that is exactly how Crisis on infinite earths played out,Crisis,positive,FlashTV,tier3_distant_supervision
+I love adamtots. He's a great comic creator,adamtots,positive,2meirl4meirl,tier3_distant_supervision
+It's because you play against 1000 ms ping EU players that have no idea what's going on. Happy hunting!,players,negative,PUBGXboxOne,tier3_distant_supervision
+"Wah, the poor dead fascist thug! What a fucking tragedy. Every dead cop makes the world a safer place.",cop,negative,SaltLakeCity,tier3_distant_supervision
+"""Human, there is something wrong with my water.""",water,neutral,youseeingthisshit,tier3_distant_supervision
+I shouldn't be tanking this much rating after even a year bro. You don't understand how bad it feels to be in this garbage elo.,rating,neutral,OverwatchUniversity,tier3_distant_supervision
+I shouldn't be tanking this much rating after even a year bro. You don't understand how bad it feels to be in this garbage elo.,elo,neutral,OverwatchUniversity,tier3_distant_supervision
+Looks just like the snow we've been getting in Halifax recently! (Canada),snow,positive,wildhockey,tier3_distant_supervision
+That’s her way of saying you aren’t getting the job,job,neutral,Target,tier3_distant_supervision
+Vaccines turk err jerbs!,Vaccines,neutral,insanepeoplefacebook,tier3_distant_supervision
+Why make it a video? Could have just been a text post.,video,positive,deadbydaylight,tier3_distant_supervision
+I have silvered it as it was what I was thinking and they beat me to it hahaha,silvered,positive,awfuleverything,tier3_distant_supervision
+Yo but that RivaL lineup tho! That's gonna be so sick,lineup,positive,Smite,tier3_distant_supervision
+"Hi, everyone! This is my 13 minute action/comedy short film, JUICY! I hope you all enjoy! Feedback is welcome. ",action,positive,entertainment,tier3_distant_supervision
+Don’t think this was posted yet,posted,neutral,BravoRealHousewives,tier3_distant_supervision
+He remains the only serve bot I enjoy watching.,serve bot,positive,tennis,tier3_distant_supervision
+I've eaten some really strange stuff and the only reason to eat this is to see if it is gross.,stuff,positive,WeWantPlates,tier3_distant_supervision
+This could be an amazing metaphor for super smart AI’s. We’re the egg.,egg,positive,yesyesyesyesno,tier3_distant_supervision
+such a deep and powerful tweet,tweet,positive,90DayFiance,tier3_distant_supervision
+Intresting. Well I sure did learn something today! Cheers!,learn,positive,Christianity,tier3_distant_supervision
+"That's why everyone loves you, you're a joke club. ",club,positive,Gunners,tier3_distant_supervision
+And a pretty bad [NAME] too.,NAME,negative,cringe,tier3_distant_supervision
+The counter-clockwise was a bit too much for even a real anti vaxxer tho.,counter - clockwise,neutral,vaxxhappened,tier3_distant_supervision
+"It is his welcome, he can do with it as he wishes. Your misunderstanding is forgiven.",welcome,positive,videos,tier3_distant_supervision
+Lol good talk,talk,positive,SelfAwarewolves,tier3_distant_supervision
+"Ok, I will take this with a pinch of salt, but take it into consideration nonetheless. Thanks.",salt,positive,relationships,tier3_distant_supervision
+Get better jobs,jobs,neutral,nashville,tier3_distant_supervision
+Noooo no more NEXTs anymore! They are obviously just a kid who is excited to discover music. Give them a break! :/,music,negative,cringe,tier3_distant_supervision
+It’s only a problem if politicians capitulate to the mob.,politicians,neutral,ukpolitics,tier3_distant_supervision
+The douche is strong with this one.,douche,neutral,90dayfianceuncensored,tier3_distant_supervision
+Well I just love it when my Squad Leader puts the order on the Opponent's starting flag for the whole round while we lose everything else.,flag,positive,Battlefield,tier3_distant_supervision
+The idea of that sucks!,idea,negative,melbourne,tier3_distant_supervision
+Thank you for explaining it better than my rambling. I agree.,explaining,positive,adultery,tier3_distant_supervision
+Support the Sydney ~~Blues~~ Sixers. Loved that gaff last night.,gaff,positive,nrl,tier3_distant_supervision
+I heard someone say one... ‘everywhere is is better but Perth is the best!’ Glad you enjoyed your holiday!,Perth,positive,perth,tier3_distant_supervision
+"""Holding [NAME] up like baby [NAME] would be a fantastic way to excite a fan base that’s been neglected for years.""",a,positive,NewYorkMets,tier3_distant_supervision
+What does an endorsement really do though? Does it seem like a publicity stunt?,endorsement,neutral,ShitPoliticsSays,tier3_distant_supervision
+...except that they’re an [NAME] coached team.,coached,positive,sports,tier3_distant_supervision
+I have no confidence to boost,confidence,negative,IncelsWithoutHate,tier3_distant_supervision
+"Huh our foster loves being snuggled in a blanket, but our dog we've had for 6 years hates being covered.",blanket,positive,HumansBeingBros,tier3_distant_supervision
+We need more boards and to create a bit more space for [NAME]. Then we’ll be good.,boards,neutral,MkeBucks,tier3_distant_supervision
+We need more boards and to create a bit more space for [NAME]. Then we’ll be good.,space,neutral,MkeBucks,tier3_distant_supervision
+ok i noticed the eyelashes but the rest is really unnoticable,eyelashes,positive,danganronpa,tier3_distant_supervision
+Big words coming from a guy who only talks about [NAME],guy,neutral,timberwolves,tier3_distant_supervision
+Get the lad a prize.,prize,neutral,progun,tier3_distant_supervision
+R/sleeptrain Might be time for some sleep training. Take a look and try to feel out what's right for your family.,sleep training,positive,Parenting,tier3_distant_supervision
+"I love his reaction. ""That was amazing""",reaction,positive,KidsAreFuckingStupid,tier3_distant_supervision
+"Literally a post on reddit by a woman being creepily hit on by a neighbor, with his wife's permission. Today.",woman,positive,polyamory,tier3_distant_supervision
+"Every time I get a staff kill, it feels like seeing a shooting star <3 Yeah, it definitely sucks.",staff,negative,StarWarsBattlefront,tier3_distant_supervision
+BY [NAME] THAT'S [NAME] MUSIC!,MUSIC,positive,NYKnicks,tier3_distant_supervision
+Yep and what a wonderful land it is. My favorite place in the world Edit: omg everybody so mad 🤣🤣🤣🤣🤣,land,positive,NYKnicks,tier3_distant_supervision
+"Eh, keep it here. There's plenty of need for content that isn't about politics or antisemitism. Food is fun for everyone to talk about.",Food,neutral,Judaism,tier3_distant_supervision
+"I, too, have lied about getting hooked up by Hasbro to justify the unhealthy amount of money I have spent on Nerf guns. ",money,positive,rickandmorty,tier3_distant_supervision
+this 'bug' has caused me countless death... i always used rifle primarily and switched to shotgun after rifle shot,bug,negative,BattlefieldV,tier3_distant_supervision
+>but part of the whole inequality picture is women receiving lower pay for the same jobs. Honestly? Doesn't happen.,pay,negative,canada,tier3_distant_supervision
+Well I did add an edit you might have missed haha,edit,positive,LabourUK,tier3_distant_supervision
+Volunteer. Helping people in need will make you feel better about both yourself and others.,Volunteer,positive,AskMenOver30,tier3_distant_supervision
+It took me a second to distinguish between whether it was [NAME] or [NAME]. I have officially been cursed by this subreddit.,subreddit,neutral,danganronpa,tier3_distant_supervision
+"No mercy, if there is any man left inside you than walk out now.",man,negative,Marriage,tier3_distant_supervision
+Women are more neurotic.,Women,neutral,samharris,tier3_distant_supervision
+you have twice the courage I wish I had. well done dude!! wishing you all the best!,courage,positive,LGBTeens,tier3_distant_supervision
+Well I am the son of a parent who legally immigrated from the [RELIGION] country of Turkey so no thanks jackass.,jackass,neutral,ShitPoliticsSays,tier3_distant_supervision
+"Besides, Canada is extremely choosy about the kind of people they allow in.",Canada,neutral,canada,tier3_distant_supervision
+Water? Find a way to keep your temperature down.,Water,positive,Games,tier3_distant_supervision
+Water? Find a way to keep your temperature down.,temperature,positive,Games,tier3_distant_supervision
+"nice looks like I hit just about hit the sweet spot, thanks",spot,positive,dxm,tier3_distant_supervision
+I know a dozen local school administrators. What the hell are you talking about?,administrators,negative,Connecticut,tier3_distant_supervision
+I actually find running harder than passing on all madden,running,positive,GreenBayPackers,tier3_distant_supervision
+I would meet up in a public place first. Invite her to a bar within walking distance of your place and assess. Safety first.,bar,positive,dating,tier3_distant_supervision
+But pretty much the entire Torah is in masculine language. Weak argument on their part.,Torah,neutral,Judaism,tier3_distant_supervision
+"But atacking it over and over again is considered griefing, you wanted to shoot fishes in a barrel over and over and got caught.",fishes,neutral,dayz,tier3_distant_supervision
+"This is the most pleasant debate I’ve ever had on reddit. Also, $nah$",debate,neutral,Libertarian,tier3_distant_supervision
+"Adding a few projectile characters only made the game better, not worse. Bars can go though.",Bars,positive,Tekken,tier3_distant_supervision
+What a douche. Yeah I try to order within my country to keep away from customs,douche,negative,darknet,tier3_distant_supervision
+What a douche. Yeah I try to order within my country to keep away from customs,customs,negative,darknet,tier3_distant_supervision
+"Honestly, same. I was miserable at my admin asst job.",admin,negative,BPD,tier3_distant_supervision
+The Best Argument against RWP/Neocons/Palecons/Libertarians/ClassicLibs is the fact that the American State have indulged in Wars for commodities since its incepcion.,commodities,neutral,CapitalismVSocialism,tier3_distant_supervision
+You don't have a Mrs do you?,Mrs,negative,Anarcho_Capitalism,tier3_distant_supervision
+Back at it with the crazy [RELIGION] conspiracies I see. Did you stop taking your pills?,pills,neutral,TrueReddit,tier3_distant_supervision
+"Yes, you do live in a clown world, laugh it up, degenerate.",world,positive,TrueReddit,tier3_distant_supervision
+I think that had to do more with not wanting to hurt the old man lol,man,positive,NYKnicks,tier3_distant_supervision
+Sorry that you lost that stuff. But that's a lot to have in your car in SF,stuff,negative,sanfrancisco,tier3_distant_supervision
+Oh this is that one he posted a while back with the dinosaur and flowers 🤢,flowers,neutral,90DayFiance,tier3_distant_supervision
+Same! Protect yourself as much as you can. I also clean the phone and the case :D,case,positive,DoesAnybodyElse,tier3_distant_supervision
+[NAME] at 2.38 against Moicano seems like excellent value for me,value,positive,MMA,tier3_distant_supervision
+"""At least you're not this guy.""",guy,neutral,AskMen,tier3_distant_supervision
+how the absolute fuck did black panther get nominated for best picture? its marvel action schlock at its worst. blackkklansman on the other hand is a great movie,picture,negative,movies,tier3_distant_supervision
+The loading screen has the circle at the bottom that just keeps spinning. I tried uninstalling the app and that didn't work either.,loading screen,negative,My600lbLife,tier3_distant_supervision
+The loading screen has the circle at the bottom that just keeps spinning. I tried uninstalling the app and that didn't work either.,app,negative,My600lbLife,tier3_distant_supervision
+"there's no ventilation shafts in the dumb things, block the exits and make a bonfire.",ventilation,negative,ABoringDystopia,tier3_distant_supervision
+"there's no ventilation shafts in the dumb things, block the exits and make a bonfire.",bonfire,negative,ABoringDystopia,tier3_distant_supervision
+"Beatin’, bangin’, ‘n’ scratchin’ - [NAME] and the andrews sisters",andrews,neutral,LGBTeens,tier3_distant_supervision
+Weird flex but ok,flex,neutral,woooosh,tier3_distant_supervision
+Now all I’m imaging is [NAME] casted in the American pie movies as [NAME]. Thank you for this memory.,pie,positive,cringepics,tier3_distant_supervision
+Maybe it's not over for you. Is there a gym for social awkwardness?,gym,neutral,ForeverAlone,tier3_distant_supervision
+"I play EVE and I’m a moron. If I can do it, anyone can. ",EVE,positive,MMORPG,tier3_distant_supervision
+Shouldn't have drank water from his cup.,water,neutral,ABCDesis,tier3_distant_supervision
+Shouldn't have drank water from his cup.,cup,neutral,ABCDesis,tier3_distant_supervision
+"A burned hand teaches best, after that advice about fire goes to the heart.",advice,positive,ExpectationVsReality,tier3_distant_supervision
+"Just eat it after. Lol. Im kidding, but it would honestly be the best recycling option. Not that anyone is going to do it. ",recycling,positive,NoFap,tier3_distant_supervision
+He'll pull back into his shell before anyone gets a chance to hurt him,shell,neutral,AskMenOver30,tier3_distant_supervision
+"But the poster, on the other hand...",poster,neutral,liberalgunowners,tier3_distant_supervision
+The reason we’re stuck in the shutdown is the democrats. Plain and simple.,democrats,positive,UpliftingNews,tier3_distant_supervision
+Nice! I missed the Babybel.,Babybel,negative,WeWantPlates,tier3_distant_supervision
+This is on a video about electric guitars what the fuck?,video,neutral,gatekeeping,tier3_distant_supervision
+"Oh I can feel the burn all the way from Australia, even a few months later. Doesn't anyone have a direct source to this post? Thanks",burn,positive,JordanPeterson,tier3_distant_supervision
+Imagine is the other kids parent pulled a [NAME] on em.,parent,neutral,GetMotivated,tier3_distant_supervision
+What a baby...,baby,positive,deadbydaylight,tier3_distant_supervision
+"If my dog were as ugly as you, id shave its butt, and tell it to walk backwards",dog,negative,sports,tier3_distant_supervision
+Don't forget the hours of tests and homework you have to do before getting an interview.,tests,neutral,lostgeneration,tier3_distant_supervision
+Don't forget the hours of tests and homework you have to do before getting an interview.,homework,neutral,lostgeneration,tier3_distant_supervision
+You'll all be getting coal this Christmas!,coal,neutral,nonononoyes,tier3_distant_supervision
+What a nice person helping the mentally disabled.,person,positive,meirl,tier3_distant_supervision
+"Deluxe always need ingest people, there's also fairly regular openings for media operators.",Deluxe,neutral,sydney,tier3_distant_supervision
+"Deluxe always need ingest people, there's also fairly regular openings for media operators.",media,neutral,sydney,tier3_distant_supervision
+That's forward heavy punch right? Sorry I'm pretty new to SF,forward,negative,StreetFighter,tier3_distant_supervision
+That's forward heavy punch right? Sorry I'm pretty new to SF,punch,negative,StreetFighter,tier3_distant_supervision
+And you can amend a tax return. She can’t amend a terrible life choice like that.,tax,negative,antiMLM,tier3_distant_supervision
+I just call my girl and tell her I love her lol. Easy day.,girl,positive,relationship_advice,tier3_distant_supervision
+Oh that makes sense. But still I think asking a girl to touch her boobs is pretty creepy xD,girl,neutral,sex,tier3_distant_supervision
+I love me some Cat but someone clearly never read The mists of Avalon,Cat,positive,freefolk,tier3_distant_supervision
+It's catdog's parents,catdog,neutral,TIHI,tier3_distant_supervision
+"If anyone believes this post, they are more of an idiot that the op",post,neutral,thatHappened,tier3_distant_supervision
+giving great [NAME] vibes,vibes,positive,Justfuckmyshitup,tier3_distant_supervision
+The King of DoorDash. Great work as always.,DoorDash,positive,doordash,tier3_distant_supervision
+The King of DoorDash. Great work as always.,work,positive,doordash,tier3_distant_supervision
+And then he calls the fans crybabies for saying his movie sucked. Just take the L dude.,dude,neutral,raimimemes,tier3_distant_supervision
+I'm not trying to address the whole issue. I'm just trying to suggest that there might be unintended consequences that lead to even less public discourse.,discourse,neutral,AskThe_Donald,tier3_distant_supervision
+"Happiest of birthdays, hope you can share it with the ones you love ",birthdays,positive,gay,tier3_distant_supervision
+Fuck man I didn’t plan on crying in my cube today,cube,neutral,NYKnicks,tier3_distant_supervision
+Thanks I don't know why it didn't load for me on my phone.,load,positive,Roadcam,tier3_distant_supervision
+And let us not forget the lord's privilege with a new bride. Ahhhh......the good old days.,new bride,positive,Catholicism,tier3_distant_supervision
+Anybody who likes to drink water with ice is a degenerate,water,neutral,China,tier3_distant_supervision
+Anybody who likes to drink water with ice is a degenerate,ice,neutral,China,tier3_distant_supervision
+Looks like a good DILF look to be fair lol,DILF,positive,nattyorjuice,tier3_distant_supervision
+Fat dont fail me now!!,Fat,neutral,TheSimpsons,tier3_distant_supervision
+"Aww, what a cute pair",pair,positive,AnimalsBeingBros,tier3_distant_supervision
+These 2 are repulsive little kids,kids,positive,loveafterlockup,tier3_distant_supervision
+I didn’t downvote you because I would like to know the reasoning first.,downvote,positive,49ers,tier3_distant_supervision
+"What the problem? I mean, steak? Good. Doughnuts? Good!! I don’t see an issue. ",steak,negative,TIHI,tier3_distant_supervision
+"What the problem? I mean, steak? Good. Doughnuts? Good!! I don’t see an issue. ",Doughnuts,negative,TIHI,tier3_distant_supervision
+Its worth the risk,risk,neutral,Paladins,tier3_distant_supervision
+"Oh [NAME], oh no, no no no",NAME,positive,popping,tier3_distant_supervision
+The man and dog have been spotted running past [NAME] and nobody is helping! I would help but I just had my nails done.,man,neutral,Portland,tier3_distant_supervision
+The man and dog have been spotted running past [NAME] and nobody is helping! I would help but I just had my nails done.,dog,neutral,Portland,tier3_distant_supervision
+"dear [NAME] if i hear her say ""MAH FEE-YAWNN-SAYYYY"" one more time.. she's a wreck poor girl. ",girl,neutral,vanderpumprules,tier3_distant_supervision
+"When the law says that being penetrated is required to be called rape, it's not just peoples' belief, it's literally systematic.",law,neutral,MensRights,tier3_distant_supervision
+"When the law says that being penetrated is required to be called rape, it's not just peoples' belief, it's literally systematic.",rape,neutral,MensRights,tier3_distant_supervision
+"If you're in the Arrowverse, stay away from [NAME] and [NAME]. Swipe motherfucking **left**.",Arrowverse,neutral,FlashTV,tier3_distant_supervision
+I’m pissed wood only knows how to skate in one dimension.,wood,neutral,devils,tier3_distant_supervision
+I'm sorry but as someone who travels alone I would be pissed if I was told I can't drink at the bar by myself.,bar,negative,TwoXChromosomes,tier3_distant_supervision
+Let me rephrase what was said above: You should do some research from sources biased towards science.,research,neutral,DebateAnAtheist,tier3_distant_supervision
+Thank you for your advice! I really do appreciate it and will implement it as the kids get older.,advice,positive,Parenting,tier3_distant_supervision
+At least it made for hilarious responses by people being aghast by the price.,price,negative,ChoosingBeggars,tier3_distant_supervision
+I'd let him destroy me with facts and knowledge 😩😩😩,facts,neutral,teenagers,tier3_distant_supervision
+You guys rock!,guys,positive,Teachers,tier3_distant_supervision
+I'd rather die than drive a Volvo!,Volvo,negative,Truckers,tier3_distant_supervision
+"We have [NAME] in Iowa, too bad this story doesn't affect US stores, I would be driving the extra distance to support these guys",stores,neutral,UpliftingNews,tier3_distant_supervision
+Excited to see this kid in red and black some day,kid,positive,devils,tier3_distant_supervision
+"If you love the mountains, you should really check it out. The valley can get pretty smoggish in the winter, but usually it's beautiful.",mountains,positive,SaltLakeCity,tier3_distant_supervision
+"If you love the mountains, you should really check it out. The valley can get pretty smoggish in the winter, but usually it's beautiful.",valley,positive,SaltLakeCity,tier3_distant_supervision
+Unfortunately for me you have to be 23 or older to drive for TMC,drive,neutral,Truckers,tier3_distant_supervision
+"get a doorway pull up bar, pop a couple everytime you pass by it. Helped me reach 20",bar,neutral,bodybuilding,tier3_distant_supervision
+"For you, the day the bison frolicked in the snow was the cutest time in your life, but for me...it was Tuesday. ",bison,positive,pittsburgh,tier3_distant_supervision
+"Also, there's no point in having a job if it doesn't pay substantially more than the childcare costs.",job,neutral,bestoflegaladvice,tier3_distant_supervision
+"Also, there's no point in having a job if it doesn't pay substantially more than the childcare costs.",childcare,neutral,bestoflegaladvice,tier3_distant_supervision
+Over-levelling is easy to avoid you just turn off exp-share Except no one is going to do that because arbitrarily grinding is boring,grinding,neutral,SubredditDrama,tier3_distant_supervision
+i feel like they are hateful towards everyone but that might be me not understanding their community,community,negative,Trufemcels,tier3_distant_supervision
+"Siri ""calling mom would be sad""",mom,negative,2meirl4meirl,tier3_distant_supervision
+That's a really interesting article. Has effectively nothing to do with myth making though.,article,positive,thalassophobia,tier3_distant_supervision
+This world doesn't deserve baby sloths!,baby,negative,OkCupid,tier3_distant_supervision
+What do you mean? It would be the same code for every system?,code,neutral,instant_regret,tier3_distant_supervision
+"I was able to catch the first half and his D looked great (thats what she said?), did it decline in the second?",D,neutral,chicagobulls,tier3_distant_supervision
+This is my favourite comment of the day. So because I don't like to be ripped off I should not be able to have a family?,comment,neutral,unitedkingdom,tier3_distant_supervision
+Drugs are a hell of a drug...,Drugs,neutral,holdmybeer,tier3_distant_supervision
+Papaoutai still leaves me bald.,Papaoutai,negative,popheads,tier3_distant_supervision
+I have said many times [NAME] should just quit playing around and open a full on grocery store. Seems like a logical next step.,grocery,negative,houston,tier3_distant_supervision
+Nice job with the censor,job,positive,DunderMifflin,tier3_distant_supervision
+Nice job with the censor,censor,positive,DunderMifflin,tier3_distant_supervision
+"He had a bad year the year prior to [NAME] coming, yes. 2 years prior to [NAME] he had 30 TD and 17 INT. ",year,neutral,nyjets,tier3_distant_supervision
+its even worse because the starter kit is like $70 too right? So in reality she probably made closer to $30,starter kit,negative,antiMLM,tier3_distant_supervision
+“Respect the house” while it is impossible to live in your own before you're 30 nowadays,the,neutral,cringe,tier3_distant_supervision
+And what do you find in the mist in subnautica crystalized sulfur. So I believe this is definitely what they modeled the lost River after baddabang,sulfur,positive,thalassophobia,tier3_distant_supervision
+"Celtic das really are a different breed. If this is how they react to one loss, our next title is going to be fun.",Celtic,positive,ScottishFootball,tier3_distant_supervision
+Go to your room!,room,neutral,AskMen,tier3_distant_supervision
+I thought about it but I wanted a sub that didn't exist.,sub,positive,MaliciousCompliance,tier3_distant_supervision
+There would be a lot of sexual tension in faze...,tension,negative,GlobalOffensive,tier3_distant_supervision
+Grats man. I hit my second live one today coincidentally! Feels good :),live,positive,poker,tier3_distant_supervision
+[NAME] is a happy boi!!,boi,positive,My600lbLife,tier3_distant_supervision
+Buddy you are mad online right now. Take a deep breath or a Xanax,Xanax,positive,CollegeBasketball,tier3_distant_supervision
+"you made history, at least",history,neutral,SSBM,tier3_distant_supervision
+"Literally a post on reddit by a woman being creepily hit on by a neighbor, with his wife's permission. Today.",woman,neutral,polyamory,tier3_distant_supervision
+An angry old person yelling at a retail worker will never listen to reason.,retail worker,positive,TalesFromRetail,tier3_distant_supervision
+And let's all not forget the #1 cause of accidents is following too closely(tailgating).,tailgating,positive,Calgary,tier3_distant_supervision
+This is interesting. You want to share experiences with her but not necessarily have sex with her?,sex,positive,PurplePillDebate,tier3_distant_supervision
+"cars don't start, sometimes car doors are frozen shut. that's the worst of what i've experienced.",cars,negative,minnesota,tier3_distant_supervision
+"cars don't start, sometimes car doors are frozen shut. that's the worst of what i've experienced.",doors,negative,minnesota,tier3_distant_supervision
+"We had the chance, but never made the offer last year.",offer,positive,LigaMX,tier3_distant_supervision
+New flavour! I love it!,flavour,positive,TeenMomOGandTeenMom2,tier3_distant_supervision
+Sounds like she wanted it done regardless of doctor,doctor,neutral,childfree,tier3_distant_supervision
+I'd rather continue throwing money into these foreign sinkholes than use it to mess up the healthcare markets any further.,money,neutral,Shitstatistssay,tier3_distant_supervision
+"[NAME] was the only one I actually liked, besides [NAME].",NAME,positive,greysanatomy,tier3_distant_supervision
+"Problem solved, you no longer have to play. Who ever said mods couldnt fix this game...",mods,neutral,pcgaming,tier3_distant_supervision
+"*Not wearing makeup the next day* ""Are you okay? You look sick.""",makeup,neutral,TrollXChromosomes,tier3_distant_supervision
+My favorite kind of post,post,positive,vanderpumprules,tier3_distant_supervision
+Go to Happiest Hour before/after the game. Walking distance b/w AA center. It's a fun spot!,game,positive,Dallas,tier3_distant_supervision
+Go to Happiest Hour before/after the game. Walking distance b/w AA center. It's a fun spot!,spot,positive,Dallas,tier3_distant_supervision
+"Put a shirt on, this is the internet for [NAME] sake! ",shirt,neutral,cringepics,tier3_distant_supervision
+"Put a shirt on, this is the internet for [NAME] sake! ",internet,neutral,cringepics,tier3_distant_supervision
+"Oops, accidentally fed the troll. Ah well, we all gotta eat. Guess I'm feeling charitable. 😉",troll,positive,adultery,tier3_distant_supervision
+"You didn't write that very clearly at all. I Wish You Would is a cover anyway, and I highly doubt that was the point of the tweet.",cover,negative,thatHappened,tier3_distant_supervision
+I though [NAME] was the offensive guru? Why would he get an established guy who has an offense?,guy,neutral,49ers,tier3_distant_supervision
+Same love our late 80s and early 90s Unis. When ever I used to play [NAME] I always played with throw back Unis due to helmet,Unis,positive,NYGiants,tier3_distant_supervision
+The kind of women they'll never get.,women,neutral,moviescirclejerk,tier3_distant_supervision
+Holy fuck this sub is the gift that keeps on giving,sub,positive,canucks,tier3_distant_supervision
+Amusing considering she isn’t a mom.,mom,positive,vanderpumprules,tier3_distant_supervision
+They added it back for a short time but removed it shortly after.,time,negative,TownofSalemgame,tier3_distant_supervision
+"look up hypersexuality, it's tied with BPD but not every pwBPD experiences it ",hypersexuality,negative,BPD,tier3_distant_supervision
+"thats the future right there, robots trying to help but destroying your whole home in the process. ",robots,negative,yesyesyesyesno,tier3_distant_supervision
+"I picked up some sea pods the other day for like $8 us online and I love them, zero leaks and great flavour!",sea,positive,juul,tier3_distant_supervision
+"I picked up some sea pods the other day for like $8 us online and I love them, zero leaks and great flavour!",flavour,positive,juul,tier3_distant_supervision
+"Im not a brexiter. In fact, this is my concern with a second referendum. I'm worried that remain will lose.",remain,negative,unitedkingdom,tier3_distant_supervision
+I love CO2.... ... as carbonation in beer and soda.,beer,positive,facepalm,tier3_distant_supervision
+I love CO2.... ... as carbonation in beer and soda.,soda,positive,facepalm,tier3_distant_supervision
+Yes they do. Thank you for the idea!,idea,positive,LGBTeens,tier3_distant_supervision
+A fucking power outage during a hurricane and your car is fucked.,power,neutral,DiWHY,tier3_distant_supervision
+"Ha, nope! Trying to distract myself on mobile in a really boring meeting. r/whoosh",mobile,negative,phoenix,tier3_distant_supervision
+Not an awful offer but I don't know if I see AD promising to resign long term in Dallas.,offer,positive,Mavericks,tier3_distant_supervision
+I’m baked and the fact that you updated yourself is extremely satisfying to me so thanks for that.,baked,positive,netflix,tier3_distant_supervision
+No worries. Just giving you a hard time!,time,positive,winnipegjets,tier3_distant_supervision
+"Gee, a GIF that doesn't move. Thanks, OP ",GIF,positive,reactiongifs,tier3_distant_supervision
+Being so rare and only giving you bad luck? Fake news,luck,negative,terriblefacebookmemes,tier3_distant_supervision
+"Yeah, that teacher was a disaster. She got fired a year later for just being an all around idiot.",teacher,negative,MaliciousCompliance,tier3_distant_supervision
+Does this really work? Any one else try this yet? I'm surprised I've never heard of this before thank you.,work,positive,dxm,tier3_distant_supervision
+"A Visa gift card is a type of Visa card, and you can return money to it just like you can with any other Visa card.",Visa gift card,positive,TalesFromRetail,tier3_distant_supervision
+"A Visa gift card is a type of Visa card, and you can return money to it just like you can with any other Visa card.",money,positive,TalesFromRetail,tier3_distant_supervision
+"I only meant it in kindness, I’ve loved this country so far. You’re all so damned friendly here",country,positive,Scotland,tier3_distant_supervision
+I don’t think anyone on this show has ever joined a sport for exercise. [NAME] is awesome!!!,sport,positive,My600lbLife,tier3_distant_supervision
+Shot info -> Canon 5D Mark iii & Sigma 150-600mm C f/9 ▫️ 1/60 sec ▫️ ISO 400 **instagram**,Shot,neutral,SeattleWA,tier3_distant_supervision
+"You're on the internet, google [NAME]. ",google,neutral,IncelTears,tier3_distant_supervision
+I would spend money on hots again for this skin !,hots,positive,heroesofthestorm,tier3_distant_supervision
+I would spend money on hots again for this skin !,skin,positive,heroesofthestorm,tier3_distant_supervision
+#THANK YOU FOR THE RED ARROWS. I NEVER WOULD HAVE GUESSED IT WAS THE TOP COMMENT,RED ARROWS,positive,MurderedByWords,tier3_distant_supervision
+Nothing is off the table when you’re morally right and the ends justify the means,table,neutral,Conservative,tier3_distant_supervision
+"Sorry, that was a camel (unless you're talking about the remake).",camel,negative,Scotland,tier3_distant_supervision
+[NAME] is such a wholesome woman. The world needs more people like her.,woman,positive,entertainment,tier3_distant_supervision
+"I'm at 133 wins. I'll probably try to get 17 more since I'm so close and they eextendedthe season, but it seems kinda meh",season,neutral,Smite,tier3_distant_supervision
+"This is also Morning Consult, which isn't the most reliable of polls.",polls,neutral,VoteBlue,tier3_distant_supervision
+This may be one of those 'pick your battles' situations. Him not paying tithing is HUGE. I would take that as a massive victory.,situations,neutral,exmormon,tier3_distant_supervision
+This may be one of those 'pick your battles' situations. Him not paying tithing is HUGE. I would take that as a massive victory.,tithing,neutral,exmormon,tier3_distant_supervision
+"The kid you're replying too is a known [NAME] stan lol, he's gonna argue with any narrative that [NAME] is close to [NAME].",kid,negative,chicagobulls,tier3_distant_supervision
+She represents window licking retards.,window,negative,ShitPoliticsSays,tier3_distant_supervision
+"Awesome, thanks. Great answer.",answer,positive,pettyrevenge,tier3_distant_supervision
+"It's easy to overthink things online, I'm glad you gave him a chance.",online,positive,datingoverthirty,tier3_distant_supervision
+Erm... Maybe he wants you to use those toys... On him.,toys,neutral,DeadBedrooms,tier3_distant_supervision
+I believe it was a severe dislocation as opposed to a fracture. Regardless....poor guy....,guy,negative,sports,tier3_distant_supervision
+It's the number it came from,number,neutral,onguardforthee,tier3_distant_supervision
+"* [NAME] fought for freedom and glory, is one of my favorite characters in general.",characters,positive,SubredditSimulator,tier3_distant_supervision
+"He's gonna say ""stop eating chips""",chips,negative,My600lbLife,tier3_distant_supervision
+Glad you enjoyed! Come on down on Mondays. We have trivia and all the burgers are $6!,trivia,positive,phoenix,tier3_distant_supervision
+Glad you enjoyed! Come on down on Mondays. We have trivia and all the burgers are $6!,burgers,positive,phoenix,tier3_distant_supervision
+No lights are a problem for the people in front of you. Not the offender.,lights,neutral,houston,tier3_distant_supervision
+Lol alright dude. Nice chat.,chat,positive,CanadaPolitics,tier3_distant_supervision
+So we are really going to miss the playoffs in the same season as the 10 game win streak... THEY ARE WHO WE THOUGHT THEY WERE !,playoffs,negative,sabres,tier3_distant_supervision
+No wonder they don’t want us using the word “retarded”...it all makes sense now,retarded,neutral,ShitPoliticsSays,tier3_distant_supervision
+Boring way to get it and unfair with the rest of the pkayers,pkayers,negative,reddeadredemption2,tier3_distant_supervision
+I thought that was the [NAME] special,special,positive,ripcity,tier3_distant_supervision
+"kid still sad after eating food, because it WASN'T A HAPPY MEAL.",food,positive,entitledparents,tier3_distant_supervision
+"kid still sad after eating food, because it WASN'T A HAPPY MEAL.",MEAL,positive,entitledparents,tier3_distant_supervision
+That is the squeal of a kid who gets whatever he wants.,kid,positive,KidsAreFuckingStupid,tier3_distant_supervision
+"I'll be there! Should be an interesting foray into STOs, and is a sign of what is to come. ",STOs,positive,CryptoCurrency,tier3_distant_supervision
+Less to keep track of,keep track,neutral,aspergers,tier3_distant_supervision
+Beyond meat is a veggie patty too.,meat,neutral,environment,tier3_distant_supervision
+Beyond meat is a veggie patty too.,veggie,neutral,environment,tier3_distant_supervision
+it is actually called a mechanical bull,mechanical bull,neutral,nononono,tier3_distant_supervision
+He's eating cheese and watching football in the sky now. Rest in peace!,cheese,negative,GreenBayPackers,tier3_distant_supervision
+He's eating cheese and watching football in the sky now. Rest in peace!,football,negative,GreenBayPackers,tier3_distant_supervision
