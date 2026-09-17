@@ -26,6 +26,7 @@ cymem==2.0.13
 datasets==5.0.1
 debugpy==1.8.21
 decorator==5.3.1
+defusedxml==0.7.1
 dill==0.4.1
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85
 et_xmlfile==2.0.0
@@ -67,6 +68,7 @@ murmurhash==1.0.15
 natsort==8.4.0
 nest-asyncio2==1.7.2
 networkx==3.4.2
+nltk==3.10.3
 numpy==1.26.4
 openpyxl==3.1.5
 packaging==26.3
