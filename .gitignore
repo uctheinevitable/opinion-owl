@@ -7,3 +7,7 @@ __pycache__/
 .env
 *.zip
 .ipynb_checkpoints/
+dataset/embeddings/
+*.pt
+*.pth
+*.joblib
