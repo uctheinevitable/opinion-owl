@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Opinion Owl Reddit Exporter",
+  "version": "1.0",
+  "description": "Click on a Reddit post to export all comments as a CSV for Opinion Owl.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://www.reddit.com/*",
+    "https://reddit.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Export comments to CSV"
+  }
+}
