@@ -8,7 +8,6 @@ columns predicted_polarity, confidence, all_class_scores and model.
 Each function also accepts an optional `progress` object (anything with a .progress(fraction)
 method, such as a Streamlit progress bar) and updates it as batches finish.
 """
-
 import json
 from functools import lru_cache
 
@@ -24,7 +23,9 @@ TFIDF_CLASSIFIER_PATH = TFIDF_DIR / "tfidf_classifier.joblib"
 TFIDF_INFO_PATH = TFIDF_DIR / "tfidf_model_info.joblib"
 ATAE_MODEL_PATH = ATAE_DIR / "atae_lstm_best.pt"
 DEBERTA_CONFIG_PATH = DEBERTA_DIR / "config.json"
+DEBERTA_WEIGHTS_PATH = DEBERTA_DIR / "model.safetensors"
 
+ATAE_BATCH_SIZE = 64
 DEBERTA_MAX_LENGTH = 128   # same as training
 DEBERTA_BATCH_SIZE = 32
 
@@ -49,7 +50,7 @@ def _result_frame(frame, labels, confidences, score_dicts, model_name):
 
 
 def predict_tfidf(frame, progress=None):
-    """TF-IDF + linear classifier. Input is "aspect [SEP] sentence", as in training."""
+    """TF-IDF + linear classifier. Input is "aspect [SEP] sentence", as in training (notebook 01)."""
     vectorizer = joblib.load(TFIDF_VECTORIZER_PATH)
     classifier = joblib.load(TFIDF_CLASSIFIER_PATH)
     model_name = "tfidf_classifier"
@@ -86,19 +87,19 @@ def predict_atae(frame, progress=None):
     texts, aspects = _clean_inputs(frame)
 
     results = []
-    for number, (text, aspect) in enumerate(zip(texts, aspects), start=1):
-        results.append(predictor.predict(text, aspect))
-        if progress and number % 25 == 0:
-            progress.progress(min(1.0, number / len(texts)))
+    for start in range(0, len(texts), ATAE_BATCH_SIZE):
+        end = start + ATAE_BATCH_SIZE
+        results.extend(predictor.predict_batch(texts[start:end], aspects[start:end]))
+        if progress:
+            progress.progress(min(1.0, end / len(texts)))
     if progress:
         progress.progress(1.0)
 
-    score_dicts = [r.get("all_class_scores", r.get("all_probabilities", {})) for r in results]
     return _result_frame(
         frame,
         [r["predicted_polarity"] for r in results],
         [r["confidence"] for r in results],
-        score_dicts,
+        [r["all_class_scores"] for r in results],
         "atae_lstm",
     )
 
@@ -121,8 +122,10 @@ def _load_deberta():
 
     label_map_path = DEBERTA_DIR / "label_map.json"
     if label_map_path.exists():
-        with open(label_map_path) as f:
-            id_to_label = {int(k): v for k, v in json.load(f)["id_to_label"].items()}
+        id_to_label = {
+            int(k): v
+            for k, v in json.loads(label_map_path.read_text(encoding="utf-8"))["id_to_label"].items()
+        }
     else:
         id_to_label = {int(k): v for k, v in model.config.id2label.items()}
     return tokenizer, model, id_to_label, device
@@ -165,7 +168,7 @@ def predict_deberta(frame, progress=None):
 MODELS = {
     "TF-IDF": (predict_tfidf, [TFIDF_VECTORIZER_PATH, TFIDF_CLASSIFIER_PATH], "notebook 01", "tfidf"),
     "ATAE-LSTM": (predict_atae, [ATAE_MODEL_PATH], "notebook 02", "atae"),
-    "DeBERTa-v3": (predict_deberta, [DEBERTA_CONFIG_PATH], "notebook 03", "deberta"),
+    "DeBERTa-v3": (predict_deberta, [DEBERTA_CONFIG_PATH, DEBERTA_WEIGHTS_PATH], "notebook 03", "deberta"),
 }
 
 
