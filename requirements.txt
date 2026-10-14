@@ -1,0 +1,15 @@
+numpy>=2.4.6
+pandas>=3.0.3
+scikit-learn>=1.9.0
+joblib>=1.5.3
+matplotlib>=3.11.0
+torch>=2.14.0
+transformers>=5.18.0
+accelerate>=1.15.0
+huggingface_hub>=1.33.0
+sentencepiece>=0.2.2
+streamlit>=1.58.0
+altair>=6.0.0
+nbformat>=5.10.4
+nbconvert>=7.17.1
+ipykernel>=6.31.0
