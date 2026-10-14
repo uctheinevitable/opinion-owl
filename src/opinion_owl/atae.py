@@ -1,21 +1,39 @@
-"""ATAE-LSTM building blocks shared by notebooks 02, 05 and 06.
+"""ATAE-LSTM building blocks shared by notebook 02 and inference.py.
 
-Kept in one place so the training notebook and the prediction notebooks can never
-disagree about the tokenizer, the padding rules or the model layers. If any of these
-change, the saved weights from notebook 02 must be retrained.
+inference.py is used by notebooks 04 and 06 and by the app. Everything lives in one place so the
+training notebook and the prediction code can never disagree about the tokenizer, the padding
+rules or the model layers. If any of these change, the saved weights from notebook 02 must be
+retrained (bump TOKENIZER_VERSION when tokenize() changes; old checkpoints are then refused).
 """
 import re
+from pathlib import Path
 
+import numpy as np
 import torch
 import torch.nn as nn
 
 PAD_ID = 0  # padding, ignored by the model
 UNK_ID = 1  # word not in the training vocabulary
 
+# Bump this whenever tokenize() changes. A checkpoint trained with another version is refused,
+# because its vocabulary would no longer match the way new text is split into words.
+TOKENIZER_VERSION = 2
+
+_APOSTROPHES = str.maketrans({"\u2019": "'", "\u2018": "'", "\u00b4": "'", "`": "'"})
+
+# Words, numbers and contractions split the way the GloVe vectors were built:
+#   isn't -> is + n't, don't -> do + n't, it's -> it + 's, I'm -> i + 'm
+_TOKEN = re.compile(r"[a-z0-9]+(?=n't\b)|n't\b|'(?:s|re|ve|ll|d|m)\b|[a-z0-9]+")
+
 
 def tokenize(text):
-    """Lowercase words, numbers and contractions: "8GB RAM isn't enough!" -> 8gb, ram, isn't, enough."""
-    return re.findall(r"[a-z0-9]+(?:'[a-z]+)?", str(text).lower())
+    """Lowercase words and numbers, with contractions split like GloVe does.
+
+    "8GB RAM isn't enough!" -> 8gb, ram, is, n't, enough
+    Curly apostrophes (don\u2019t) are treated like straight ones, so negations survive in
+    text copied from web pages.
+    """
+    return _TOKEN.findall(str(text).lower().translate(_APOSTROPHES))
 
 
 def encode_tokens(tokens, vocabulary, max_length):
@@ -92,48 +110,90 @@ class ATAELSTM(nn.Module):
 class AtaePredictor:
     """Loads the checkpoint saved by notebook 02 and scores (text, aspect) pairs.
 
-    The checkpoint stores the vocabulary, label order and layer sizes next to the
-    weights, so nothing has to be retyped to rebuild the model.
+    The checkpoint stores the vocabulary, label order and layer sizes next to the weights, so
+    nothing has to be retyped to rebuild the model. If notebook 02 trained several models (one per
+    seed), all of them are loaded and their probabilities are averaged.
     """
 
     def __init__(self, checkpoint_path, device=None):
         self.device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-        checkpoint = torch.load(checkpoint_path, map_location=self.device)
+        # weights_only=True: the file holds only tensors, numbers, text and plain dicts.
+        checkpoint = torch.load(checkpoint_path, map_location=self.device, weights_only=True)
         self.vocab = checkpoint["vocab"]
         self.label_to_id = checkpoint["label_to_id"]
         self.config = checkpoint["config"]
         self.best_validation_macro_f1 = checkpoint.get("best_validation_macro_f1")
+        self.selection_metric = checkpoint.get("selection_metric")
         self.id_to_label = {label_id: label for label, label_id in self.label_to_id.items()}
 
-        self.model = ATAELSTM(
-            vocab_size=len(self.vocab),
-            embedding_dim=self.config["embedding_dim"],
-            hidden_dim=self.config["hidden_dim"],
-            num_classes=len(self.label_to_id),
-            dropout=self.config["dropout"],
+        saved_version = self.config.get("tokenizer_version", 1)
+        if saved_version != TOKENIZER_VERSION:
+            raise ValueError(
+                f"{Path(checkpoint_path).name} was trained with tokenizer version {saved_version}, "
+                f"but atae.py uses version {TOKENIZER_VERSION}. Re-run notebook 02 to retrain the ATAE-LSTM."
+            )
+
+        # One state dict per trained model. Older single-model files only have "model_state_dict".
+        state_dicts = checkpoint.get("model_state_dicts") or [checkpoint["model_state_dict"]]
+        self.models = []
+        for state_dict in state_dicts:
+            model = ATAELSTM(
+                vocab_size=len(self.vocab),
+                embedding_dim=self.config["embedding_dim"],
+                hidden_dim=self.config["hidden_dim"],
+                num_classes=len(self.label_to_id),
+                dropout=self.config["dropout"],
+            ).to(self.device)
+            model.load_state_dict(state_dict)
+            model.eval()  # switches dropout off
+            self.models.append(model)
+
+        self.model = self.models[0]   # the first model, for code that expects a single one
+        self.n_models = len(self.models)
+
+    def predict_batch(self, texts, aspect_terms, return_attention=False):
+        """Score many (text, aspect) pairs at once. Returns one result dict per pair, in order."""
+        if len(texts) != len(aspect_terms):
+            raise ValueError("texts and aspect_terms must have the same length")
+        if not texts:
+            return []
+
+        sentence_ids = torch.tensor(
+            [encode_tokens(tokenize(t), self.vocab, self.config["max_sentence_len"]) for t in texts],
+            dtype=torch.long,
         ).to(self.device)
-        self.model.load_state_dict(checkpoint["model_state_dict"])
-        self.model.eval()  # switches dropout off
+        aspect_ids = torch.tensor(
+            [encode_tokens(tokenize(a), self.vocab, self.config["max_aspect_len"]) for a in aspect_terms],
+            dtype=torch.long,
+        ).to(self.device)
+
+        probabilities, attentions = [], []
+        with torch.no_grad():
+            for model in self.models:
+                logits, attention_weights = model(sentence_ids, aspect_ids)
+                probabilities.append(torch.softmax(logits, dim=1).cpu().numpy())
+                attentions.append(attention_weights.cpu().numpy())
+
+        # With several models the answer is the average of their probabilities.
+        probabilities = np.mean(probabilities, axis=0)
+        attention = np.mean(attentions, axis=0) if return_attention else None
+
+        results = []
+        for row, probs in enumerate(probabilities):
+            predicted_id = int(probs.argmax())
+            result = {
+                "predicted_polarity": self.id_to_label[predicted_id],
+                "confidence": round(float(probs[predicted_id]), 4),
+                "all_class_scores": {
+                    self.id_to_label[i]: round(float(probs[i]), 4) for i in range(len(self.label_to_id))
+                },
+            }
+            if return_attention:
+                result["attention_weights"] = attention[row]
+            results.append(result)
+        return results
 
     def predict(self, text, aspect_term):
         """Return polarity, its probability, every class probability and per-word attention."""
-        sentence_ids = encode_tokens(tokenize(text), self.vocab, self.config["max_sentence_len"])
-        aspect_ids = encode_tokens(tokenize(aspect_term), self.vocab, self.config["max_aspect_len"])
-
-        with torch.no_grad():
-            logits, attention_weights = self.model(
-                torch.tensor([sentence_ids], dtype=torch.long).to(self.device),
-                torch.tensor([aspect_ids], dtype=torch.long).to(self.device),
-            )
-            probabilities = torch.softmax(logits, dim=1)[0]
-            predicted_id = torch.argmax(probabilities).item()
-
-        return {
-            "predicted_polarity": self.id_to_label[predicted_id],
-            "confidence": round(float(probabilities[predicted_id]), 4),
-            "all_class_scores": {
-                self.id_to_label[i]: round(float(probabilities[i]), 4) for i in range(len(self.label_to_id))
-            },
-            "attention_weights": attention_weights[0].detach().cpu().numpy(),
-        }
+        return self.predict_batch([text], [aspect_term], return_attention=True)[0]
