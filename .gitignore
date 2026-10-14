@@ -1,25 +1,33 @@
+# Python
 __pycache__/
 *.py[cod]
+*.egg-info/
 .venv/
 venv/
-.env
 .ipynb_checkpoints/
-*.egg-info/
 
-data/processed/
+# Secrets
+.env
+
+# Generated or downloaded: rebuilt by setup_project.py and the notebooks
+# GloVe, downloaded by setup_project.py
 data/embeddings/
-data/scraped/
+# built by notebook 00
+data/processed/
 data/splits/
+# built by notebook 05
 data/comments/
-models/deberta_v3_runs/
-models/deberta_v3_base_pretrained/
-models/**/.cache/
-models/deberta_v3_absa/model.safetensors
-*.pt
-*.pth
-*.bin
+# trained by notebooks 01 to 03
+models/
+# written by notebooks 04 and 06
+results/
+# executed notebook copies and cleanup archive
+runs/
+_archive/
 
-.DS_Store
-Thumbs.db
+# Editor, OS and scratch files
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db
+project_listing.txt

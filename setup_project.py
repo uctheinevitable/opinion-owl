@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 """Setup for Opinion Owl. Run it once after cloning:
 
-    python scripts/setup_project.py              # creates .venv, installs packages, downloads GloVe
-    python scripts/setup_project.py --no-venv    # install into the Python you are already using (conda etc.)
-    python scripts/setup_project.py --skip-glove # do not download GloVe
+    python setup_project.py              # creates .venv, installs packages, downloads GloVe
+    python setup_project.py --no-venv    # install into the Python you are already using (conda etc.)
+    python setup_project.py --skip-glove # do not download GloVe
 
 What it does:
   1. Installs the packages (requirements.txt) and the project itself (pip install -e .).
@@ -22,7 +22,7 @@ import venv
 import zipfile
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 
 GLOVE_URL = "https://downloads.cs.stanford.edu/nlp/data/glove.6B.zip"   # 822 MB, holds 50d to 300d
 GLOVE_MEMBER = "glove.6B.100d.txt"
