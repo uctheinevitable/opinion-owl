@@ -228,8 +228,6 @@ Folders that are rebuilt automatically (`data/processed`, `data/splits`, `data/e
 
 The dashboard shows three classes, so `conflict` is counted as `neutral` when scoring. The split is made once, with a fixed seed, and keeps all rows of the same sentence together. Its report (`data/splits/split_report.json`) holds a fingerprint of the data, so any result can be tied to the exact data behind it.
 
-> Add the source and licence of each dataset here.
-
 ---
 
 ## Limitations
