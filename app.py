@@ -411,7 +411,7 @@ def sidebar():
             f"Test macro-F1: {info['macro_f1']:.2f}, accuracy: {info['accuracy']:.2f} "
             f"on {info['rows_scored']} labeled rows."
         )
-    st.sidebar.caption("Roughly 1 in 5 aspect labels can be wrong at this accuracy. Treat small counts with care.")
+        st.sidebar.caption("Roughly 1 in 5 aspect labels can be wrong at this accuracy. Treat small counts with care.")
     return granularity, min_conf, min_mentions
 
 
