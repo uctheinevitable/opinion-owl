@@ -1,0 +1,173 @@
+"""Run the three trained models on (text, aspect) rows.
+
+Used by notebook 04 (labeled test rows), notebook 06 (real comments) and the app, so all of
+them predict in exactly the same way. Every predict_* function takes a DataFrame with the
+columns "text" and "aspect_term" and returns a DataFrame with the same index and the
+columns predicted_polarity, confidence, all_class_scores and model.
+
+Each function also accepts an optional `progress` object (anything with a .progress(fraction)
+method, such as a Streamlit progress bar) and updates it as batches finish.
+"""
+
+import json
+from functools import lru_cache
+
+import joblib
+import numpy as np
+import pandas as pd
+
+from opinion_owl.atae import AtaePredictor
+from opinion_owl.config import ATAE_DIR, DEBERTA_DIR, TFIDF_DIR
+
+TFIDF_VECTORIZER_PATH = TFIDF_DIR / "tfidf_vectorizer.joblib"
+TFIDF_CLASSIFIER_PATH = TFIDF_DIR / "tfidf_classifier.joblib"
+TFIDF_INFO_PATH = TFIDF_DIR / "tfidf_model_info.joblib"
+ATAE_MODEL_PATH = ATAE_DIR / "atae_lstm_best.pt"
+DEBERTA_CONFIG_PATH = DEBERTA_DIR / "config.json"
+
+DEBERTA_MAX_LENGTH = 128   # same as training
+DEBERTA_BATCH_SIZE = 32
+
+
+def _clean_inputs(frame):
+    texts = frame["text"].astype(str).str.strip().tolist()
+    # Lowercase to match how aspect names looked during training.
+    aspects = frame["aspect_term"].astype(str).str.strip().str.lower().tolist()
+    return texts, aspects
+
+
+def _result_frame(frame, labels, confidences, score_dicts, model_name):
+    return pd.DataFrame(
+        {
+            "predicted_polarity": labels,
+            "confidence": np.round(np.asarray(confidences, dtype=float), 4),
+            "all_class_scores": score_dicts,
+            "model": model_name,
+        },
+        index=frame.index,
+    )
+
+
+def predict_tfidf(frame, progress=None):
+    """TF-IDF + linear classifier. Input is "aspect [SEP] sentence", as in training."""
+    vectorizer = joblib.load(TFIDF_VECTORIZER_PATH)
+    classifier = joblib.load(TFIDF_CLASSIFIER_PATH)
+    model_name = "tfidf_classifier"
+    if TFIDF_INFO_PATH.exists():
+        model_name = joblib.load(TFIDF_INFO_PATH).get("model_name", model_name)
+
+    texts, aspects = _clean_inputs(frame)
+    features = vectorizer.transform([a + " [SEP] " + t for a, t in zip(aspects, texts)])
+    labels = classifier.predict(features)
+
+    # LogisticRegression gives real probabilities. LinearSVC only gives decision scores, which are
+    # turned into 0-1 values with a softmax: fine for ranking rows by how sure the model is,
+    # but not calibrated probabilities.
+    if hasattr(classifier, "predict_proba"):
+        scores = classifier.predict_proba(features)
+    else:
+        raw = classifier.decision_function(features)
+        if raw.ndim == 1:   # two-class LinearSVC returns one score per row
+            raw = np.column_stack([-raw, raw])
+        exp = np.exp(raw - raw.max(axis=1, keepdims=True))
+        scores = exp / exp.sum(axis=1, keepdims=True)
+
+    score_dicts = [
+        {label: round(float(p), 4) for label, p in zip(classifier.classes_, row)} for row in scores
+    ]
+    if progress:
+        progress.progress(1.0)
+    return _result_frame(frame, labels, scores.max(axis=1), score_dicts, model_name)
+
+
+def predict_atae(frame, progress=None):
+    """Aspect-aware attention BiLSTM. Model and checkpoint loading live in atae.py."""
+    predictor = AtaePredictor(ATAE_MODEL_PATH)
+    texts, aspects = _clean_inputs(frame)
+
+    results = []
+    for number, (text, aspect) in enumerate(zip(texts, aspects), start=1):
+        results.append(predictor.predict(text, aspect))
+        if progress and number % 25 == 0:
+            progress.progress(min(1.0, number / len(texts)))
+    if progress:
+        progress.progress(1.0)
+
+    score_dicts = [r.get("all_class_scores", r.get("all_probabilities", {})) for r in results]
+    return _result_frame(
+        frame,
+        [r["predicted_polarity"] for r in results],
+        [r["confidence"] for r in results],
+        score_dicts,
+        "atae_lstm",
+    )
+
+
+@lru_cache(maxsize=1)
+def _load_deberta():
+    """Load DeBERTa once and reuse it. The app calls predict_deberta on every Analyse click,
+    and reloading the model each time would take seconds and extra GPU memory.
+
+    If you retrain the model while a kernel or the app is running, restart it (or call
+    _load_deberta.cache_clear()) so the new weights are picked up.
+    """
+    import torch
+    from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # use_fast=False matches how the model was trained and saved.
+    tokenizer = AutoTokenizer.from_pretrained(str(DEBERTA_DIR), use_fast=False)
+    model = AutoModelForSequenceClassification.from_pretrained(str(DEBERTA_DIR)).to(device).eval()
+
+    label_map_path = DEBERTA_DIR / "label_map.json"
+    if label_map_path.exists():
+        with open(label_map_path) as f:
+            id_to_label = {int(k): v for k, v in json.load(f)["id_to_label"].items()}
+    else:
+        id_to_label = {int(k): v for k, v in model.config.id2label.items()}
+    return tokenizer, model, id_to_label, device
+
+
+def predict_deberta(frame, progress=None):
+    """Fine-tuned DeBERTa-v3 reading the pair "aspect [SEP] sentence"."""
+    import torch
+
+    tokenizer, model, id_to_label, device = _load_deberta()
+    texts, aspects = _clean_inputs(frame)
+
+    # Sorting by length keeps each batch's padding small, which is much faster on CPU.
+    order = np.argsort([len(t) for t in texts], kind="stable")
+    probabilities = np.zeros((len(texts), len(id_to_label)), dtype=np.float32)
+
+    for start in range(0, len(order), DEBERTA_BATCH_SIZE):
+        idx = order[start:start + DEBERTA_BATCH_SIZE]
+        encoded = tokenizer(
+            [aspects[i] for i in idx],
+            [texts[i] for i in idx],
+            truncation="only_second",
+            max_length=DEBERTA_MAX_LENGTH,
+            padding=True,
+            return_tensors="pt",
+        ).to(device)
+        with torch.no_grad():
+            probabilities[idx] = torch.softmax(model(**encoded).logits, dim=1).cpu().numpy()
+        if progress:
+            progress.progress(min(1.0, (start + DEBERTA_BATCH_SIZE) / len(order)))
+
+    score_dicts = [
+        {id_to_label[i]: round(float(p), 4) for i, p in enumerate(row)} for row in probabilities
+    ]
+    labels = [id_to_label[i] for i in probabilities.argmax(axis=1)]
+    return _result_frame(frame, labels, probabilities.max(axis=1), score_dicts, "deberta_v3_base")
+
+
+# name -> (function, files that must exist, notebook that makes them, output file stem)
+MODELS = {
+    "TF-IDF": (predict_tfidf, [TFIDF_VECTORIZER_PATH, TFIDF_CLASSIFIER_PATH], "notebook 01", "tfidf"),
+    "ATAE-LSTM": (predict_atae, [ATAE_MODEL_PATH], "notebook 02", "atae"),
+    "DeBERTa-v3": (predict_deberta, [DEBERTA_CONFIG_PATH], "notebook 03", "deberta"),
+}
+
+
+def model_is_trained(name):
+    return all(path.exists() for path in MODELS[name][1])
