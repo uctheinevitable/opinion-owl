@@ -9,6 +9,7 @@ Each function also accepts an optional `progress` object (anything with a .progr
 method, such as a Streamlit progress bar) and updates it as batches finish.
 """
 import json
+from pathlib import Path
 from functools import lru_cache
 
 import joblib
@@ -16,7 +17,7 @@ import numpy as np
 import pandas as pd
 
 from opinion_owl.atae import AtaePredictor
-from opinion_owl.config import ATAE_DIR, DEBERTA_DIR, TFIDF_DIR
+from opinion_owl.config import ATAE_DIR, DEBERTA_DIR, DEBERTA_MODEL_ID, TFIDF_DIR
 
 TFIDF_VECTORIZER_PATH = TFIDF_DIR / "tfidf_vectorizer.joblib"
 TFIDF_CLASSIFIER_PATH = TFIDF_DIR / "tfidf_classifier.joblib"
@@ -27,7 +28,7 @@ DEBERTA_WEIGHTS_PATH = DEBERTA_DIR / "model.safetensors"
 
 ATAE_BATCH_SIZE = 64
 DEBERTA_MAX_LENGTH = 128   # same as training
-DEBERTA_BATCH_SIZE = 32
+DEBERTA_BATCH_SIZE = 8  # lower peak memory on free CPU hosting
 
 
 def _clean_inputs(frame):
@@ -106,29 +107,58 @@ def predict_atae(frame, progress=None):
 
 @lru_cache(maxsize=1)
 def _load_deberta():
-    """Load DeBERTa once and reuse it. The app calls predict_deberta on every Analyse click,
-    and reloading the model each time would take seconds and extra GPU memory.
+    """Load DeBERTa once, using local weights if present or the Hugging Face Hub otherwise.
 
-    If you retrain the model while a kernel or the app is running, restart it (or call
-    _load_deberta.cache_clear()) so the new weights are picked up.
+    The published Hub repository has tokenizer.json but not the slow SentencePiece
+    vocabulary file, so `use_fast=True` is required for the hosted model.
     """
     import torch
     from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    # use_fast=False matches how the model was trained and saved.
-    tokenizer = AutoTokenizer.from_pretrained(str(DEBERTA_DIR), use_fast=False)
-    model = AutoModelForSequenceClassification.from_pretrained(str(DEBERTA_DIR)).to(device).eval()
+    local_model_ready = DEBERTA_CONFIG_PATH.is_file() and DEBERTA_WEIGHTS_PATH.is_file()
+    model_source = str(DEBERTA_DIR) if local_model_ready else DEBERTA_MODEL_ID
+    if not model_source:
+        raise RuntimeError(
+            "No DeBERTa model source configured. Set OPINION_OWL_DEBERTA_MODEL_ID "
+            "or place a complete model under models/deberta_v3_absa."
+        )
 
-    label_map_path = DEBERTA_DIR / "label_map.json"
-    if label_map_path.exists():
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    try:
+        tokenizer = AutoTokenizer.from_pretrained(model_source, use_fast=True)
+        model = AutoModelForSequenceClassification.from_pretrained(model_source)
+        model.to(device)
+        model.eval()
+
+        if local_model_ready and (DEBERTA_DIR / "label_map.json").is_file():
+            label_path = DEBERTA_DIR / "label_map.json"
+        else:
+            from huggingface_hub import hf_hub_download
+            label_path = Path(hf_hub_download(
+                repo_id=model_source,
+                filename="label_map.json",
+            ))
+
+        label_data = json.loads(Path(label_path).read_text(encoding="utf-8"))
         id_to_label = {
-            int(k): v
-            for k, v in json.loads(label_map_path.read_text(encoding="utf-8"))["id_to_label"].items()
+            int(k): str(v).lower()
+            for k, v in label_data["id_to_label"].items()
         }
-    else:
-        id_to_label = {int(k): v for k, v in model.config.id2label.items()}
-    return tokenizer, model, id_to_label, device
+
+        expected_ids = set(range(int(model.config.num_labels)))
+        if set(id_to_label) != expected_ids:
+            raise ValueError(
+                f"Label map IDs {sorted(id_to_label)} do not match model output IDs "
+                f"{sorted(expected_ids)}."
+            )
+        return tokenizer, model, id_to_label, device
+
+    except Exception as exc:
+        raise RuntimeError(
+            f"Failed to load DeBERTa from {model_source!r}. Check that the model repository "
+            "is public, its files are complete, and torch/transformers/huggingface_hub "
+            f"are installed. Original error: {exc}"
+        ) from exc
 
 
 def predict_deberta(frame, progress=None):
@@ -152,7 +182,7 @@ def predict_deberta(frame, progress=None):
             padding=True,
             return_tensors="pt",
         ).to(device)
-        with torch.no_grad():
+        with torch.inference_mode():
             probabilities[idx] = torch.softmax(model(**encoded).logits, dim=1).cpu().numpy()
         if progress:
             progress.progress(min(1.0, (start + DEBERTA_BATCH_SIZE) / len(order)))
@@ -161,7 +191,7 @@ def predict_deberta(frame, progress=None):
         {id_to_label[i]: round(float(p), 4) for i, p in enumerate(row)} for row in probabilities
     ]
     labels = [id_to_label[i] for i in probabilities.argmax(axis=1)]
-    return _result_frame(frame, labels, probabilities.max(axis=1), score_dicts, "deberta_v3_base")
+    return _result_frame(frame, labels, probabilities.max(axis=1), score_dicts, "opinion_owl_deberta")
 
 
 # name -> (function, files that must exist, notebook that makes them, output file stem)
@@ -173,4 +203,9 @@ MODELS = {
 
 
 def model_is_trained(name):
+    """Whether inference assets are available locally or through the configured Hub repo."""
+    if name == "DeBERTa-v3" and DEBERTA_MODEL_ID:
+        return (
+            DEBERTA_CONFIG_PATH.is_file() and DEBERTA_WEIGHTS_PATH.is_file()
+        ) or bool(DEBERTA_MODEL_ID)
     return all(path.exists() for path in MODELS[name][1])
