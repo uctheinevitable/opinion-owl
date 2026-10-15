@@ -12,6 +12,15 @@ The model code lives in src/opinion_owl/inference.py, shared with the notebooks.
 import html
 import json
 import re
+import sys
+from pathlib import Path
+
+# The package uses a `src/` layout. Add it explicitly so cloud hosts can import
+# opinion_owl even when the project has not been installed with `pip install -e .`.
+PROJECT_ROOT = Path(__file__).resolve().parent
+SRC_DIR = PROJECT_ROOT / "src"
+if SRC_DIR.is_dir() and str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
 
 import numpy as np
 import pandas as pd
@@ -37,8 +46,9 @@ PALETTE = {
     "positive": "#5E8C4F",
     "neutral": "#A2988A",
     "negative": "#B4513A",
+    "conflict": "#C18A3D",
 }
-COLORS = {k: PALETTE[k] for k in ("positive", "neutral", "negative")}
+COLORS = {k: PALETTE[k] for k in ("positive", "neutral", "negative", "conflict")}
 SCORE = {"positive": 1.0, "neutral": 0.0, "negative": -1.0}
 
 POSITIVE_VERDICTS = ["Mostly positive", "Positive-leaning"]
@@ -140,32 +150,37 @@ def analyse(comments, granularity, predictor=predict_deberta, progress=None):
 
 
 # --------------------------------------------------------------- aggregation
-def verdict(pos, neu, neg):
-    """Turn the positive/neutral/negative shares into a short label."""
+def verdict(pos, neu, neg, conflict=0.0):
+    """Summarise sentiment shares while preserving the model's conflict class."""
     if pos >= 0.6:
         return "Mostly positive"
     if neg >= 0.6:
         return "Mostly negative"
+    if conflict >= 0.25:
+        return "Conflicting"
     if pos >= 0.25 and neg >= 0.25:
         return "Mixed"
     return "Positive-leaning" if pos > neg else "Negative-leaning" if neg > pos else "Neutral"
 
 
 def summarise_aspects(rows, min_confidence, min_mentions):
-    """Count polarities per aspect after dropping shaky predictions and rarely-seen aspects."""
+    """Count all four model labels after filtering low-confidence and rare mentions."""
     kept = rows[rows["confidence"] >= min_confidence]
+    labels = ["positive", "neutral", "negative", "conflict"]
     table = (
         kept.groupby("aspect_term")["polarity"]
         .value_counts().unstack(fill_value=0)
-        .reindex(columns=["positive", "neutral", "negative"], fill_value=0)
+        .reindex(columns=labels, fill_value=0)
     )
-    table["mentions"] = table.sum(axis=1)
+    table["mentions"] = table[labels].sum(axis=1)
     table = table[table["mentions"] >= min_mentions].copy()
-    for label in ["positive", "neutral", "negative"]:
+    for label in labels:
         table[f"{label}_share"] = table[label] / table["mentions"]
     table["verdict"] = [
-        verdict(r.positive_share, r.neutral_share, r.negative_share) for r in table.itertuples()
+        verdict(r.positive_share, r.neutral_share, r.negative_share, r.conflict_share)
+        for r in table.itertuples()
     ]
+    # Conflicting predictions are counted but are not misrepresented as positive/negative.
     table["score"] = table["positive_share"] - table["negative_share"]
     return table.sort_values("mentions", ascending=False)
 
@@ -186,12 +201,15 @@ def customers_say(table):
     liked = table[table["verdict"].isin(POSITIVE_VERDICTS)].head(4).index
     disliked = table[table["verdict"].isin(NEGATIVE_VERDICTS)].head(4).index
     mixed = table[table["verdict"] == "Mixed"].head(4).index
+    conflicting = table[table["verdict"] == "Conflicting"].head(4).index
 
     sentences = []
     if len(liked):
         sentences.append(f"Commenters praise {join_names(liked)}.")
     if len(mixed):
         sentences.append(f"Opinions are mixed on {join_names(mixed)}.")
+    if len(conflicting):
+        sentences.append(f"Comments contain conflicting sentiment about {join_names(conflicting)}.")
     if len(disliked):
         start = "However, commenters" if sentences else "Commenters"
         sentences.append(f"{start} criticise {join_names(disliked)}.")
@@ -208,6 +226,9 @@ def aspect_blurb(aspect, row):
         text = f"Commenters are unhappy with {aspect}: {neg:.0%} of mentions are negative."
     elif label == "Mixed":
         text = f"Opinions on {aspect} are split: {pos:.0%} positive and {neg:.0%} negative."
+    elif label == "Conflicting":
+        conflict = row["conflict_share"]
+        text = f"Comments contain conflicting sentiment about {aspect} ({conflict:.0%} of mentions)."
     elif label == "Positive-leaning":
         text = f"Opinions on {aspect} lean positive ({pos:.0%} positive, {neg:.0%} negative)."
     elif label == "Negative-leaning":
@@ -257,7 +278,7 @@ CSS = """
 :root {
   --page: %(page)s; --card: %(card)s; --sand: %(sand)s; --line: %(line)s;
   --ink: %(ink)s; --muted: %(muted)s; --accent: %(accent)s;
-  --pos: %(positive)s; --neu: %(neutral)s; --neg: %(negative)s;
+  --pos: %(positive)s; --neu: %(neutral)s; --neg: %(negative)s; --conflict: %(conflict)s;
 }
 .stApp { background: var(--page); color: var(--ink); }
 header[data-testid="stHeader"] { background: transparent; }
@@ -302,7 +323,7 @@ section[data-testid="stSidebar"] * { color: var(--ink); }
 .oo-quote { border-left: 4px solid var(--line); padding: 4px 0 4px 14px; margin: 12px 0; }
 .oo-quote.positive { border-left-color: var(--pos); }
 .oo-quote.neutral { border-left-color: var(--neu); }
-.oo-quote.negative { border-left-color: var(--neg); }
+.oo-quote.negative { border-left-color: var(--neg); } .oo-quote.conflict { border-left-color: var(--conflict); }
 .oo-quote .meta { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
 .oo-quote b { background: rgba(160,100,60,0.16); padding: 0 3px; border-radius: 3px; font-weight: 700; }
 .oo-quote details { margin-top: 4px; }
@@ -498,11 +519,12 @@ def render_say_card(comments, rows, table, min_conf):
         f'<span class="t"><b>{int(row.mentions)}</b> mentions of &ldquo;{html.escape(aspect)}&rdquo;</span>'
         f'<span class="oo-pos">{int(row.positive)} positive</span>'
         f'<span class="oo-neu">{int(row.neutral)} neutral</span>'
-        f'<span class="oo-neg">{int(row.negative)} negative</span></div>'
+        f'<span class="oo-neg">{int(row.negative)} negative</span>'
+        f'<span style="color:var(--conflict);font-weight:600">{int(row.conflict)} conflict</span></div>'
         f'<p class="oo-blurb">{html.escape(aspect_blurb(aspect, row))}</p></div>'
     )
     polarity_filter = st.radio(
-        "Show quotes", ["All", "Positive", "Neutral", "Negative"], horizontal=True, label_visibility="collapsed",
+        "Show quotes", ["All", "Positive", "Neutral", "Negative", "Conflict"], horizontal=True, label_visibility="collapsed",
     )
     render_quotes(kept, comments, aspect, polarity_filter)
 
@@ -516,7 +538,7 @@ def render_chart(table):
 
     long = table.reset_index().melt(
         id_vars=["aspect_term", "mentions"],
-        value_vars=["positive_share", "neutral_share", "negative_share"],
+        value_vars=["positive_share", "neutral_share", "negative_share", "conflict_share"],
         var_name="polarity", value_name="share",
     )
     long["polarity"] = long["polarity"].str.replace("_share", "", regex=False)
@@ -576,9 +598,10 @@ def show_results(comments, rows, min_conf, min_mentions):
     with chart_tab:
         render_chart(table)
     with table_tab:
-        display = table[["mentions", "verdict", "positive", "neutral", "negative"]].copy()
+        display = table[["mentions", "verdict", "positive", "neutral", "negative", "conflict"]].copy()
         display.insert(1, "positive %", (table["positive_share"] * 100).round(0).astype(int))
         display.insert(2, "negative %", (table["negative_share"] * 100).round(0).astype(int))
+        display.insert(3, "conflict %", (table["conflict_share"] * 100).round(0).astype(int))
         st.dataframe(display, use_container_width=True)
 
     st.markdown("### Frequently used phrases")
@@ -607,8 +630,8 @@ def main():
         progress = st.progress(0.0, text="Predicting polarity...")
         try:
             rows = analyse(comments, granularity, progress=progress)
-        except FileNotFoundError as error:
-            st.error(str(error))
+        except (OSError, RuntimeError, ValueError) as error:
+            st.error(f"Could not load or run the DeBERTa model: {error}")
             return
         progress.empty()
         # Keep the result in session state: Streamlit reruns the script on every
