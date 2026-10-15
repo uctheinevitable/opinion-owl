@@ -135,7 +135,7 @@ To install it: open `chrome://extensions` in Chrome or Edge, turn on **Developer
 ### 1. Clone and install
 
 ```powershell
-git clone https://github.com/<your-username>/opinion-owl.git
+git clone https://github.com/uctheinevitable/opinion-owl.git
 cd opinion-owl
 python setup_project.py
 ```
